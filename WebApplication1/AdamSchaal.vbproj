@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{372F5811-4126-41C2-9151-3D6D745BFA16}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\Standard\LandingPage.aspx" />
+    <Content Include="Forms\Wedding\Honeymoon\Honeymoon.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx" />
+    <Content Include="Forms\Wedding\Wedding\Wedding.aspx" />
+    <Content Include="img\arrow_left.png" />
+    <Content Include="img\arrow_right.png" />
+    <Content Include="img\bg\divider1.jpg" />
+    <Content Include="img\bg\divider2.jpg" />
+    <Content Include="img\bg\divider3.jpg" />
+    <Content Include="img\bg\divider4.jpg" />
+    <Content Include="img\bg\divider6.jpg" />
+    <Content Include="img\Col_Adam\10-03-09.JPG" />
+    <Content Include="img\Col_Adam\10-2-2010.JPG" />
+    <Content Include="img\Col_Adam\11-08-07 7.JPG" />
+    <Content Include="img\Col_Adam\12-27-05.jpg" />
+    <Content Include="img\Col_Adam\3-04-06 2.jpg" />
+    <Content Include="img\Col_Adam\5-24-08.jpg" />
+    <Content Include="img\Col_Adam\IMG_0520.JPG" />
+    <Content Include="img\Col_Adam\IMG_8804.JPG" />
+    <Content Include="img\Col_Adam\scan0001.jpg" />
+    <Content Include="img\HDpix\Autumn.jpg" />
+    <Content Include="img\HDpix\autumnRoad.jpg" />
+    <Content Include="img\HDpix\BallonRace.jpg" />
+    <Content Include="img\HDpix\boraBora.jpg" />
+    <Content Include="img\HDpix\bridge.jpg" />
+    <Content Include="img\HDpix\cloudSunset.jpg" />
+    <Content Include="img\HDpix\countrySide.jpg" />
+    <Content Include="img\HDpix\IceMountain.jpg" />
+    <Content Include="img\HDpix\icy mountain.jpg" />
+    <Content Include="img\HDpix\Lights.jpg" />
+    <Content Include="img\HDpix\LionKill.jpg" />
+    <Content Include="img\HDpix\Mountain Sunset.jpg" />
+    <Content Include="img\HDpix\nebula.jpg" />
+    <Content Include="img\HDpix\paradise.png" />
+    <Content Include="img\HDpix\Rainy SanFran.jpg" />
+    <Content Include="img\HDpix\Snow Striped Trees.png" />
+    <Content Include="img\HDpix\StormyHighway.jpg" />
+    <Content Include="img\HDpix\Sunrise.jpg" />
+    <Content Include="img\HDpix\Sunset Reflection.jpg" />
+    <Content Include="img\HDpix\Wave Splash.jpg" />
+    <Content Include="img\header_bg.jpg" />
+    <Content Include="img\Col_Adam\Col_Adam.JPG" />
+    <Content Include="img\HDpix\LA.Sunfire.jpg" />
+    <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
+    <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
+    <Content Include="img\PersonalPictures\NewYork\DSC05478.JPG" />
+    <Content Include="img\HDpix\red angels.jpg" />
+    <Content Include="img\HDpix\Seattle.jpg" />
+    <Content Include="img\HDpix\Storm.jpg" />
+    <Content Include="img\HDpix\Sweet Hills, MT.jpg" />
+    <Content Include="img\HDpix\train tunnel.jpg" />
+    <Content Include="img\HDpix\washington.jpg" />
+    <Content Include="img\HDpix\Winter.jpg" />
+    <Content Include="img\Wedding Pictures\IMG_0303.JPG %282%29.JPG" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Forms\Standard\About.aspx" />
+    <Content Include="Forms\Standard\Contact.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_Story.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_How.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx" />
+    <Content Include="Forms\Wedding\Proposal\Proposal_Where.aspx" />
+    <Content Include="Scripts\interact.js" />
+    <Content Include="Scripts\jquery-func.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
+    <Content Include="Scripts\retina.js" />
+    <Content Include="Scripts\smoothscroll.js" />
+    <Content Include="Styles\animate-custom.css" />
+    <Content Include="Styles\icomoon.css" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\MiscFunctions.vb" />
+    <Compile Include="Forms\Standard\About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Standard\About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Standard\Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Standard\Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Standard\LandingPage.aspx.designer.vb">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Standard\LandingPage.aspx.vb">
+      <DependentUpon>LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Honeymoon\Honeymoon.aspx.designer.vb">
+      <DependentUpon>Honeymoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Honeymoon\Honeymoon.aspx.vb">
+      <DependentUpon>Honeymoon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal.aspx.designer.vb">
+      <DependentUpon>Proposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal.aspx.vb">
+      <DependentUpon>Proposal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx.designer.vb">
+      <DependentUpon>Proposal_PicVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx.vb">
+      <DependentUpon>Proposal_PicVideos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Story.aspx.designer.vb">
+      <DependentUpon>Proposal_Story.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Story.aspx.vb">
+      <DependentUpon>Proposal_Story.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx.designer.vb">
+      <DependentUpon>Proposal_WhereNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx.vb">
+      <DependentUpon>Proposal_WhereNow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Wedding\Wedding.aspx.designer.vb">
+      <DependentUpon>Wedding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Wedding\Wedding.aspx.vb">
+      <DependentUpon>Wedding.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_How.aspx.designer.vb">
+      <DependentUpon>Proposal_How.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_How.aspx.vb">
+      <DependentUpon>Proposal_How.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx.designer.vb">
+      <DependentUpon>Proposal_Timeline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx.vb">
+      <DependentUpon>Proposal_Timeline.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Where.aspx.designer.vb">
+      <DependentUpon>Proposal_Where.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wedding\Proposal\Proposal_Where.aspx.vb">
+      <DependentUpon>Proposal_Where.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="img\.DS_Store" />
+    <None Include="img\bg\.DS_Store" />
+    <None Include="img\portfolio\.DS_Store" />
+    <None Include="img\team\.DS_Store" />
+    <None Include="Styles\bootstrap-theme.css.map" />
+    <None Include="Styles\bootstrap.css.map" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="Styles\icomoon\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57862</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
