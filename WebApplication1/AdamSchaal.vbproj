@@ -169,6 +169,7 @@
     <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Styles\animate-custom.css" />
     <Content Include="Styles\icomoon.css" />
+    <Content Include="Styles\icomoon\icomoon.svg" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -365,6 +366,10 @@
     </None>
     <Content Include="Site.Master" />
     <None Include="Styles\icomoon\.DS_Store" />
+    <None Include="Styles\icomoon\icomoon-.eot" />
+    <None Include="Styles\icomoon\icomoon.eot" />
+    <None Include="Styles\icomoon\icomoon.ttf" />
+    <None Include="Styles\icomoon\icomoon.woff" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
