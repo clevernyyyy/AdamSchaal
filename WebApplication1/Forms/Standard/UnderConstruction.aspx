@@ -1,14 +1,13 @@
-﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="WebApplication1.Site" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="UnderConstruction.aspx.vb" Inherits="WebApplication1.UnderConstruction" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head runat="server">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Adam Schaal Bootstrapped">
     <meta name="author" content="Adam Schaal">
     <link rel="shortcut icon" href="">
-    <title>AdamSchaal.com</title>
     <link type="text/css" rel="stylesheet" href="/Styles/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
@@ -22,38 +21,44 @@
         type='text/css' />
     <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
-    </asp:ContentPlaceHolder>
-    <div id="navbar-main">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon icon-pyramid" style="font-size: 30px; color: #3498db;"></span>
-                    </button>
-                    <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-pyramid"
-                        style="font-size: 18px; color: #3498db;"></span></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="../../../Default.aspx" class="smoothScroll">Home</a></li>
-                        <li><a href="/Forms/Wedding/Proposal/Proposal.aspx" class="smoothScroll">Proposal</a></li>
-                        <li><a href="/Forms/Wedding/Wedding/Wedding.aspx" class="smoothScroll">Wedding</a></li>
-                        <li><a href="/Forms/Wedding/Honeymoon/Honeymoon.aspx" class="smoothScroll">Honeymoon</a></li>
-                        <li><a href="#about" class="smoothScroll">About</a></li>
-                        <%--<li><a href="#blog" class="smoothScroll">Blog</a></li>--%>
-                        <li><a href="#contact" class="smoothScroll">Contact</a></li>
-               </div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AdamSchaal.com - Under Construction</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="/Styles/bootstrap.css" />
+    <link rel="stylesheet" href="/Styles/custom.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-pyramid" style="font-size: 30px; color: #3498db;"></span>
+                </button>
+                <a class="navbar-brand hidden-xs hidden-sm" href="/Default.aspx">
+                    <span class="icon icon-pyramid" style="font-size: 18px; color: #3498db;"></span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Default.aspx" class="smoothScroll">AdamSchaal.com</a></li>
             </div>
         </div>
     </div>
-</head>
-<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-    <div class="col-md-13">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+    <!-- Navigation Ends -->
+    <!-- Main Container -->
+        <!-- ==== HEADERWRAP ==== -->
+<div id="constructionwrap" id="home" name="home">
+    <header class="clearfix">
+	  		<h1><span class="/Styles/icon icon-warning"></span></h1>
+	  		<p>Under Construction</p>
+            <br />
+	</header>
+</div>
+
+    <!-- JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>

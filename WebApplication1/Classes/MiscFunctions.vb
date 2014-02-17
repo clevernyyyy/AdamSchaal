@@ -1,5 +1,10 @@
 ﻿Imports System.Web.HttpContext
 Imports System.Data.SqlClient
+Imports System.Web.UI.WebControls
+Imports System.Web.UI.HtmlControls
+Imports System.Text.RegularExpressions
+Imports System.Web.Configuration
+
 
 Module MiscFunctions
     Public Sub SetDisplay(ByVal strDisplay As String, ByVal ParamArray Controls() As Control)
@@ -37,5 +42,106 @@ Module MiscFunctions
                 radiobutton.Style("display") = strDisplay
             End If
         Next
+    End Sub
+
+    Public Function Settings(ByVal cnnSQL As SqlConnection) As DataTable
+        Dim cmd As New SqlCommand("[Admin].[usp_GetSettings]", cnnSQL)
+        Return FillDataTable(cmd)
+    End Function
+    Public Function Settings(ByVal cnnSQL As SqlConnection, ByVal pcSetting As String, Optional ByVal dtSettings As DataTable = Nothing) As String
+        If dtSettings Is Nothing Then
+            Dim cmd As New SqlCommand("[Admin].[usp_GetSettings]", (New Connection).cnnSQL)
+            dtSettings = FillDataTable(cmd)
+        End If
+        Dim dv As New DataView(dtSettings)
+        dv.RowFilter = "cSetting = '" & pcSetting & "'"
+        If dv.Count > 0 Then
+            Return dv(0).Item("cValue")
+        End If
+        Return ""
+    End Function
+    Public Function FillDataTable(ByRef pCommand As SqlCommand,
+                              Optional ByVal pcTableName As String = "Table", Optional ByVal plFixNulls As Boolean = True) As DataTable
+        Dim dt As New DataTable
+
+        Dim daSql As New SqlDataAdapter
+
+        pCommand.CommandType = CommandType.StoredProcedure
+
+        daSql.SelectCommand = pCommand
+
+        Try
+            CnnSqlOpen(pCommand.Connection)
+            daSql.Fill(dt)
+        Catch ex As Exception
+            Throw
+        Finally
+            ''Only close the connection if there isn't a transaction associated with the command
+            If pCommand.Transaction Is Nothing Then
+                pCommand.Connection.Close()
+            End If
+            daSql.Dispose()
+            pCommand.Dispose()
+        End Try
+
+        dt.TableName = pcTableName
+        If plFixNulls Then
+            FixNulls(dt)
+        End If
+
+        Return dt
+
+    End Function
+
+    Public Sub FixNulls(ByRef pdsSet As DataSet)
+        Try
+            For Each dtTable As DataTable In pdsSet.Tables
+                FixNulls(dtTable)
+            Next
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
+    Public Sub FixNulls(ByRef pdtTable As DataTable)
+        Try
+            'Assign a default value to all current Null fields
+            For Each dr As DataRow In pdtTable.Rows
+                FixNulls(dr, pdtTable)
+            Next
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
+    Public Sub FixNulls(ByRef pdrRow As DataRow, ByRef pdtTable As DataTable)
+        Try
+            'Assign a default value to all current Null fields
+            Dim myCol As DataColumn
+
+            For Each myCol In pdtTable.Columns
+                If IsDBNull(pdrRow.Item(myCol.ColumnName)) Then
+                    Select Case Strings.Left(myCol.ColumnName, 1)
+                        Case "c", "m"
+                            pdrRow.Item(myCol.ColumnName) = ""
+                        Case "l"
+                            pdrRow.Item(myCol.ColumnName) = False
+                        Case "n"
+                            pdrRow.Item(myCol.ColumnName) = 0
+                        Case "d"
+                            pdrRow.Item(myCol.ColumnName) = "01/01/1900"
+                        Case "i"
+                            pdrRow.Item(myCol.ColumnName) = Guid.Empty
+                    End Select
+                End If
+            Next
+        Catch ex As Exception
+            Throw
+        End Try
+    End Sub
+    Public Sub CnnSqlOpen(ByVal gcnnSQL As SqlConnection)
+        Try
+            If gcnnSQL.State = ConnectionState.Closed Then gcnnSQL.Open()
+        Catch ex As Exception
+            Throw
+        End Try
     End Sub
 End Module

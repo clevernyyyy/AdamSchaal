@@ -27,7 +27,7 @@
         <!-- ==== HEADERWRAP ==== -->
         <div id="subwrap" id="wedding" name="wedding">
             <header class="clearfix">
-	  		 		<h1><span class="/Styles/icon icon-shield"></span></h1>
+	  		 		<h1><span class="/Styles/icon icon-pyramid"></span></h1>
 	  		 		<p>Wedding</p>
 	  		 		<h2 style="color:White">This will be updated soon - I have to propose first!</h2>
 	  		</header>

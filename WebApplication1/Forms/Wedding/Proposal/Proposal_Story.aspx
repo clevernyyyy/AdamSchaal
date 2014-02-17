@@ -2,7 +2,7 @@
     CodeBehind="Proposal_Story.aspx.vb" Inherits="WebApplication1.About" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-<br />
+    <br />
 <br />
 <br />
 </asp:Content>

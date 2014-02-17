@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\Standard\LandingPage.aspx" />
+    <Content Include="Forms\Standard\UnderConstruction.aspx" />
     <Content Include="Forms\Wedding\Honeymoon\Honeymoon.aspx" />
     <Content Include="Forms\Wedding\Proposal\Proposal.aspx" />
     <Content Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx" />
@@ -106,6 +107,9 @@
     <Content Include="img\Col_Adam\12-27-05.jpg" />
     <Content Include="img\Col_Adam\3-04-06 2.jpg" />
     <Content Include="img\Col_Adam\5-24-08.jpg" />
+    <Content Include="img\Col_Adam\CollFace.png" />
+    <Content Include="img\Col_Adam\CollFace2.jpg" />
+    <Content Include="img\Col_Adam\Face.jpg" />
     <Content Include="img\Col_Adam\IMG_0520.JPG" />
     <Content Include="img\Col_Adam\IMG_8804.JPG" />
     <Content Include="img\Col_Adam\scan0001.jpg" />
@@ -168,6 +172,7 @@
     <Content Include="Scripts\retina.js" />
     <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Styles\animate-custom.css" />
+    <Content Include="Styles\custom.css" />
     <Content Include="Styles\icomoon.css" />
     <Content Include="Styles\icomoon\icomoon.svg" />
     <Content Include="Styles\main.css" />
@@ -186,7 +191,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Connection.vb" />
+    <Compile Include="Classes\Enumerations.vb" />
     <Compile Include="Classes\MiscFunctions.vb" />
+    <Compile Include="Classes\Objects.vb" />
     <Compile Include="Forms\Standard\About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
@@ -206,6 +214,13 @@
     </Compile>
     <Compile Include="Forms\Standard\LandingPage.aspx.vb">
       <DependentUpon>LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Standard\UnderConstruction.aspx.designer.vb">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Standard\UnderConstruction.aspx.vb">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Forms\Wedding\Honeymoon\Honeymoon.aspx.designer.vb">
@@ -255,7 +270,7 @@
     </Compile>
     <Compile Include="Account\Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Register.aspx.designer.vb">
       <DependentUpon>Register.aspx</DependentUpon>

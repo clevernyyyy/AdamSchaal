@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="LandingPage.aspx.vb"
     Inherits="WebApplication1.LandingPage" %>
 
+
 <%--<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">--%>
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
@@ -25,20 +26,28 @@
     <script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+ <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
         <!-- ==== HEADERWRAP ==== -->
         <div id="headerwrap" id="home" name="home">
             <header class="clearfix">
-	  		 		<h1><span class="/Styles/icon icon-shield"></span></h1>
+	  		 		<h1><span class="/Styles/icon icon-pyramid"></span></h1>
 	  		 		<p>Welcome to AdamSchaal.com</p>
-	  		 		<h2 style="color:White">This site is dedicated to my Girlfriend.</h2>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+	  		 		<h3 style="color:White">This site is dedicated to my Girlfriend.</h3>
 	  		</header>
         </div>
         <!-- ==== GREYWRAP ==== -->
+
         <div id="greywrap">
             <div class="row">
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-stack"></span>
+                    <span class="icon icon-heart"></span>
                     <h2>
                         Propsal</h2>
                     <p>
@@ -47,7 +56,7 @@
                 </div>
                 <!-- col-lg-4 -->
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-eye"></span>
+                    <span class="icon icon-people"></span>
                     <h2>
                         Wedding</h2>
                     <p>
@@ -56,7 +65,7 @@
                 </div>
                 <!-- col-lg-4 -->
                 <div class="col-lg-4 callout">
-                    <span class="icon icon-heart"></span>
+                    <span class="icon icon-bed"></span>
                     <h2>
                         Honeymoon</h2>
                     <p>

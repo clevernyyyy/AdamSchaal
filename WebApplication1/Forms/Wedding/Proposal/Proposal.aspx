@@ -36,10 +36,17 @@
                 <div class="jumbotron">
                     <h1>
                         Proposal</h1>
-                    <p>
+                    <p style="display:inline-block">
                         In this page you will learn everything you could possibly want to know about my
-                        proposal to the most wonderful girl in the world, Colleen Morrissey.</p>
-                </div>
+                        proposal to the most wonderful girl in the world, Colleen Morrissey.
+                    </p>
+                    
+            
+                    <img class="img img-circle" style="float:right;" src="/img/Col_Adam/Face.jpg" height="60px" width="60px" alt="">
+                    <span class="/Styles/icon icon-plus" style="float:right; margin-top:20px; margin-left:10px; margin-right:10px;"></span>
+                    <img class="img img-circle" style="float:right" src="/img/Col_Adam/CollFace2.jpg" height="60px" width="60px" alt="">
+                   </div>
+                
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
