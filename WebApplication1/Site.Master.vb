@@ -27,13 +27,14 @@ Public Class Site
         'Master Redirect to Login, Must have all login information
         Dim Userpkg As UserPackage = GetUserPackage()
         If Debugger.IsAttached Then
+            'Response.Redirect("/Forms/Standard/UnderConstruction.aspx")
             'Response.Redirect("/Default.aspx")
         ElseIf String.IsNullOrWhiteSpace(Userpkg.UserInformation.cAuthorization) OrElse _
             String.IsNullOrWhiteSpace(Userpkg.UserInformation.cUserName) OrElse _
             String.IsNullOrWhiteSpace(Userpkg.UserInformation.iUserIdentifier) OrElse _
             IsNothing(Userpkg.UserInformation.nUserID) OrElse _
             Not Debugger.IsAttached Then
-            Response.Redirect("/Forms/Standard/UnderConstruction.aspx")
+            'Response.Redirect("/Forms/Standard/UnderConstruction.aspx")
             'Response.Redirect("/Account/Login.aspx")
         End If
     End Sub

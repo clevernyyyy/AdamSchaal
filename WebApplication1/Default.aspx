@@ -49,7 +49,7 @@
                 <div class="col-lg-4 callout">
                     <span class="icon icon-heart"></span>
                     <h2>
-                        Propsal</h2>
+                        Proposal</h2>
                     <p>
                         Click here to see more about my proposal.
                     </p>

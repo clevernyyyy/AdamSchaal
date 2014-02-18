@@ -5,6 +5,7 @@
     <br />
 <br />
 <br />
+    <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">
@@ -14,15 +15,20 @@
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
                         Toggle nav</button>
                 </p>
-                <div class="">
-                    <h1>
+                <div class="slideUp propContent" style="min-height:900px">
+                    <h1 class="centered">
                         Proposal Story</h1>
+                        <hr />
+
+                        <h3>Chance Meeting</h3>
+                        <p>I suppose the beginning is as good as any place to start the story.</p>
+                   
                 </div>
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
-                    <a href="/Forms/Wedding/Proposal/Proposal.aspx" type="radio" class="list-group-item active">Proposal</a> 
-                    <a href="/Forms/Wedding/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item">Proposal Story</a> 
+                    <a href="/Forms/Wedding/Proposal/Proposal.aspx" type="radio" class="list-group-item">Proposal</a> 
+                    <a href="/Forms/Wedding/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item active">Proposal Story</a> 
                     <a href="/Forms/Wedding/Proposal/Proposal_How.aspx" type="radio" class="list-group-item">How did I think of it?</a>
                     <a href="/Forms/Wedding/Proposal/Proposal_Where.aspx" type="radio" class="list-group-item">Where did it happen?</a> 
                     <a href="/Forms/Wedding/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 

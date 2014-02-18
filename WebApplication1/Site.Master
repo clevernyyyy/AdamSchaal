@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="">
     <title>AdamSchaal.com</title>
     <link type="text/css" rel="stylesheet" href="/Styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Styles/custom.css">
+    <link rel="stylesheet" href="/Styles/animations.css">
     <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
     <!-- Custom styles for this template -->
