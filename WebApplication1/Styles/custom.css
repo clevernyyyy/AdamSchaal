@@ -7,3 +7,10 @@
 {
 
 }
+
+
+a.HomeRun:link
+{
+    text-decoration: none;
+    cursor: text;
+}

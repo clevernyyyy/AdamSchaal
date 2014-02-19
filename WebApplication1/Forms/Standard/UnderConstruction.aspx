@@ -54,7 +54,7 @@
             <div id="constructionwrap" id="home" name="home">
                 <header class="clearfix" style="min-height:750px">
 	  		            <h1><span class="/Styles/icon icon-warning"></span></h1>
-	  		            <p>Under Construct<asp:LinkButton id="HomeRun" runat="server" style="color:White">i</asp:LinkButton>on</p>
+	  		            <p>Under Construct<asp:LinkButton id="HomeRun" runat="server" CssClass="HomeRun" style="color:White">i</asp:LinkButton>on</p>
                         <br />
 	            </header>
             </div>
