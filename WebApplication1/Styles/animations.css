@@ -109,11 +109,11 @@ slideLeft
 	animation-name: slideLeft;
 	-webkit-animation-name: slideLeft;	
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
 
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
+	animation-timing-function: ease-in;	
+	-webkit-animation-timing-function: ease-in;		
 
 	visibility: visible !important;	
 }

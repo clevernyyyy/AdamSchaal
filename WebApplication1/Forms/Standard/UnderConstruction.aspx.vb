@@ -5,4 +5,10 @@
 
     End Sub
 
+    Private Sub HomeRun_Click(sender As Object, e As System.EventArgs) Handles HomeRun.Click
+        HttpContext.Current.Session("lHomeRun") = True
+        Response.Redirect("/Default.aspx")
+    End Sub
+
+
 End Class

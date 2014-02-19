@@ -50,13 +50,15 @@
     <!-- Navigation Ends -->
     <!-- Main Container -->
         <!-- ==== HEADERWRAP ==== -->
-<div id="constructionwrap" id="home" name="home">
-    <header class="clearfix">
-	  		<h1><span class="/Styles/icon icon-warning"></span></h1>
-	  		<p>Under Construction</p>
-            <br />
-	</header>
-</div>
+        <form runat="server">
+            <div id="constructionwrap" id="home" name="home">
+                <header class="clearfix" style="min-height:750px">
+	  		            <h1><span class="/Styles/icon icon-warning"></span></h1>
+	  		            <p>Under Construct<asp:LinkButton id="HomeRun" runat="server" style="color:White">i</asp:LinkButton>on</p>
+                        <br />
+	            </header>
+            </div>
+        </form>
 
     <!-- JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>

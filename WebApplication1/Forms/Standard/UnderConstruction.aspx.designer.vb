@@ -21,4 +21,13 @@ Partial Public Class UnderConstruction
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Head1 As Global.System.Web.UI.HtmlControls.HtmlHead
+
+    '''<summary>
+    '''HomeRun control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HomeRun As Global.System.Web.UI.WebControls.LinkButton
 End Class
