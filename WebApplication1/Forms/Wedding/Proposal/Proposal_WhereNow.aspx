@@ -19,8 +19,25 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
                     <h1 class="centered">
                         Where are we now?</h1>
                         <hr />
-                        <h3>SubHeading</h3>
-                        <p>Wording</p>
+                        <h3>
+                            <!-- Button -->
+                            <button type="button" class="btn btn-primary" style="width:130px; margin-right:20px;">What's Going On?</button>
+                            <!-- Heading -->
+                            Find out what we're doing at this very instant!
+                        </h3>
+                        <p>Where the result will go.</p>
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <h3>
+                            <!-- Cheat Button -->
+                            <button type="button" class="btn btn-danger" style="width:130px; margin-right:20px;">Cheat Code</button>
+                            <!-- Heading -->
+                            Wanna see the whole itinerary?
+                        </h3>
+                        <p>Where the result will go.</p>
 
                 </div>
             </div>

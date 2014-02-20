@@ -20,6 +20,9 @@
                         <hr />
                         <h3>SubHeading</h3>
                         <p>Wording</p>
+
+                        
+                        <img class="img img-rounded" src="/img/map/Map.jpg" height="600px" width="800px" alt="">
                
                 </div>
             </div>
