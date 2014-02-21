@@ -18,11 +18,11 @@
                     <h1 class="centered">
                         Where did it happen?</h1>
                         <hr />
-                        <h3>SubHeading</h3>
+                        <h3>The Five City Proposal...</h3>
                         <p>Wording</p>
 
                         
-                        <img class="img img-rounded" src="/img/map/Map.jpg" height="600px" width="800px" alt="">
+                        <img class="img img-rounded" src="/img/map/Map(with colors).jpg" height="600px" width="800px" alt="">
                
                 </div>
             </div>
