@@ -51,6 +51,9 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
                     <a href="/Forms/Wedding/Proposal/Proposal_PicVideos.aspx" type="radio" class="list-group-item">Pictures and Video</a>
                     <a href="/Forms/Wedding/Proposal/Proposal_Timeline.aspx" type="radio" class="list-group-item">Proposal Timeline</a>
                 </div>
+                <br />
+                <img class="img img-rounded" src="/img/HDpix/red angels.jpg" height="180px" width="260px" alt="">
+                <p>  Probably flying in style.</p>
             </div>
         </div>
         <!--/row-->
