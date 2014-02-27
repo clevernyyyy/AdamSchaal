@@ -7,9 +7,14 @@ Public Class Connection
         End Get
     End Property
 
+
     Public Sub New()
-        Me.cnnStr = ConfigurationManager.AppSettings.Item("FNOLSQLCnn")
+        'Dim oNC As New NICOCipher.NICOCrypt
+        'Dim cnnstr As String
+
+        Me.cnnStr = System.Configuration.ConfigurationManager.AppSettings.Get("clev")
+
+        'Me.cnnStr = oNC.NICO_RijndaelManaged_Decrypt(ConfigurationManager.AppSettings.Item("FNOLSQLCnn"))
     End Sub
 
 End Class
-

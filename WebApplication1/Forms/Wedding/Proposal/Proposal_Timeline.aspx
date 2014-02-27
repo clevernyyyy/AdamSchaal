@@ -30,7 +30,7 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse">
                               <div class="panel-body">
-                                  <table class="table table-striped table-bordered table-condensed">
+                                  <table id="tblPlanning" class="table table-striped table-bordered table-condensed">
                                     <thead>
                                         <tr>
                                             <th>Date</th>
@@ -39,7 +39,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <asp:Repeater ID="rptPlanning" runat="server">
+                                            <ItemTemplate>
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblContent" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblLocation" runat="server"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+
+
+
+<%--                                        <tr>
                                             <td>02/03/14</td>
                                             <td>I got Susan's email address from my Mom.  Meanwhile, I questioned you about your vacation days policies.  My questions may have made you a little suspicious.</td>
                                             <td>Omaha</td>
@@ -87,14 +105,14 @@
                                         </tr>
                                         <tr>
                                             <td>02/22/14</td>
-                                            <td>On Saturday, Nicole informed me that she was no longer available to hang out with us in Boston on 05/04.  It's due to her being schedule to work a month and a half out.  She wants us to travel to Attleboro though to go to restaurants and bars and Foxboro stadium.  I was kind of bummed and since I knew that you likely weren't interested in a football stadium, I asked if she'd compromise and visit us in Boston too.</td>
+                                            <td>On Saturday, Nicole informed me that she was no longer available to hang out with us in Boston on 05/04.  It's due to her being scheduled to work a month and a half out.  She wants us to travel to Attleboro though to go to restaurants and bars and Foxboro stadium.  I was kind of bummed and since I knew that you likely weren't interested in a football stadium, I asked if she'd compromise and visit us in Boston too.</td>
                                             <td>Omaha</td>
                                         </tr>
                                         <tr>
                                             <td>02/23/14</td>
                                             <td>I worked on my project at work and I needed a break.  On my break I added this section to adamschaal.com, it's kind of long-winded I think, but overall looks good.</td>
                                             <td>Omaha</td>
-                                        </tr>
+                                        </tr>--%>
                                     </tbody>
                                 </table>
                               </div>
@@ -119,16 +137,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>02/03/14</td>
-                                            <td>Next event.</td>
-                                            <td>Omaha</td>
-                                        </tr>
-                                        <tr>
-                                            <td>02/04/14</td>
-                                            <td>Next event.</td>
-                                            <td>Omaha</td>
-                                        </tr>
+                                        <asp:Repeater ID="rptFirstLeg" runat="server">
+                                            <ItemTemplate>
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblContent" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblLocation" runat="server"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
                                     </tbody>
                                 </table>
                               </div>
@@ -153,16 +176,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>02/03/14</td>
-                                            <td>Next events.</td>
-                                            <td>Omaha</td>
-                                        </tr>
-                                        <tr>
-                                            <td>02/04/14</td>
-                                            <td>Next event.</td>
-                                            <td>Omaha</td>
-                                        </tr>
+                                        <asp:Repeater ID="rptSecondLeg" runat="server">
+                                            <ItemTemplate>
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblContent" runat="server"></asp:Label>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblLocation" runat="server"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
                                     </tbody>
                                 </table>
                               </div>
