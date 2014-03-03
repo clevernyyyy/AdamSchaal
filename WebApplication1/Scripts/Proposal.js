@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
 
-    $("a").not('[data-parent*="accordion"]').click(function (event) {
+    $("a").not('[data-parent*="accordion"],.btn').click(function (event) {
         var href = $(this).attr("href");
         $("[id$='jumbotron']").toggle("slide", { direction: 'left' }, 600);
         $("[id$='gridDetails']").toggle("slide", { direction: 'right' }, 600);
@@ -13,7 +13,6 @@
         event.preventDefault();
     });
 
-
 });
 
 
@@ -22,4 +21,3 @@
     }
 
 
-    

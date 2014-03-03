@@ -57,12 +57,6 @@ Public Class ProposalStory_Timeline
 
 
 #Region "DataBind"
-
-
-
-
-#End Region
-
     Private Sub rptPlanning_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptPlanning.ItemDataBound
         TableBind(e)
     End Sub
@@ -76,4 +70,5 @@ Public Class ProposalStory_Timeline
     Private Sub rptSecondLeg_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptSecondLeg.ItemDataBound
         TableBind(e)
     End Sub
+#End Region
 End Class

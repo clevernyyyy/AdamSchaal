@@ -131,10 +131,9 @@
     <Content Include="img\HDpix\Wave Splash.jpg" />
     <Content Include="img\header_bg.jpg" />
     <Content Include="img\Col_Adam\Col_Adam.JPG" />
+    <Content Include="img\map\Map%28with colors and wording%29.jpg" />
     <Content Include="img\map\Map%28with colors%29.jpg" />
     <Content Include="img\map\Map%28with curved lines%29.jpg" />
-    <Content Include="img\map\Map%28with lines%29.jpg" />
-    <Content Include="img\map\Map.jpg" />
     <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05478.JPG" />

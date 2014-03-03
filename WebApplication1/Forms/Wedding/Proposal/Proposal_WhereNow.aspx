@@ -21,11 +21,16 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
                         <hr />
                         <h3>
                             <!-- Button -->
-                            <button type="button" class="btn btn-primary" style="width:130px; margin-right:20px;">What's Going On?</button>
+                            <a id="btnGetNow" runat="server" href= "" class="btn btn-primary" data-text-loading="Loading..."
+                                style="width:140px; margin-right:20px;" data-reset-text="Try that again">
+                                What's Going On?
+                            </a>
                             <!-- Heading -->
                             Find out what we're doing at this very instant!
                         </h3>
-                        <p>Where the result will go.</p>
+
+                        <asp:Label ID="lblNow" runat="server" style="font-size:larger"></asp:Label>
+                        <%--<p>Where the result will go.</p>--%>
 
                         <br />
                         <br />
@@ -33,7 +38,10 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
 
                         <h3>
                             <!-- Cheat Button -->
-                            <button type="button" class="btn btn-danger" style="width:130px; margin-right:20px;">Cheat Code</button>
+                            <a id="btnGetAll" href= "" runat="server" class="btn btn-danger" data-text-loading="Loading..." 
+                                style="width:140px; margin-right:20px;" data-reset-text="Try that again">
+                                Cheat Code
+                            </a>
                             <!-- Heading -->
                             Wanna see the whole itinerary?
                         </h3>
