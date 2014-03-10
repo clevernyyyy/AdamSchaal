@@ -22,6 +22,8 @@
         rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet'
         type='text/css' />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
 </asp:Content>

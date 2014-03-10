@@ -87,6 +87,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="Forms\Standard\LandingPage.aspx" />
     <Content Include="Forms\Standard\UnderConstruction.aspx" />
     <Content Include="Forms\Wedding\Honeymoon\Honeymoon.aspx" />
@@ -134,6 +135,7 @@
     <Content Include="img\map\Map%28with colors and wording%29.jpg" />
     <Content Include="img\map\Map%28with colors%29.jpg" />
     <Content Include="img\map\Map%28with curved lines%29.jpg" />
+    <Content Include="img\map\Map.png" />
     <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05478.JPG" />

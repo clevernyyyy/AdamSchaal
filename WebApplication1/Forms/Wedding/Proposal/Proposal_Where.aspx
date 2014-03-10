@@ -18,11 +18,11 @@
                     <h1 class="centered">
                         Where did it happen?</h1>
                         <hr />
-                        <h3>The Two Country, Six State Proposal, Seven City Proposal...</h3>
+                        <h3>The Two Country, Five State Proposal, Six City Proposal...</h3>
                         <p>My girlfriend is so unbelieveably awesome that my proposal had to be just as spectacular.</p>
 
                         
-                        <img class="img img-rounded" src="/img/map/Map(with colors and wording).jpg" height="600px" width="800px" alt=""/>
+                        <img class="img img-rounded" src="/img/map/Map.png" height="600px" width="800px" alt=""/>
                         <%--<img class="img img-rounded" src="/img/map/Map(with curved lines).jpg" height="600px" width="800px" alt="">--%>
                
                 </div>
