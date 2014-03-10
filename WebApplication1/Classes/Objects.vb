@@ -1,23 +1,9 @@
-﻿Public Module Objects
-
-#Region "UserPackage"
-    Public Function GetUserPackage()
-        Dim Userpkg As UserPackage
-        If HttpContext.Current.Session("UserPackage") Is Nothing Then
-            Userpkg = New UserPackage
-            HttpContext.Current.Session("UserPackage") = Userpkg
-        End If
-        Userpkg = HttpContext.Current.Session("UserPackage")
-        Return Userpkg
-    End Function
-
-    Public Sub ClearUserPackage()
-        HttpContext.Current.Session("UserPackage") = Nothing
-    End Sub
+﻿#Region "Packages"
+<Serializable()> _
+Public Class Package
+    Public WhereNow As New WhereNow
+End Class
 #End Region
-
-End Module
-
 
 #Region "User Package"
 <Serializable()> _
@@ -37,4 +23,16 @@ Public Class UserInformation
 End Class
 #End Region
 
+#End Region
+
+#Region "WhereNow"
+<Serializable()> _
+Public Class WhereNow
+    Public Property nID As Integer
+    Public Property cContent As String
+    Public Property dInception As Date
+    Public Property dExpiration As Date
+    Public Property cLocation As String
+    Public Property cImage As String
+End Class
 #End Region

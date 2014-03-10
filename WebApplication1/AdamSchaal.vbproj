@@ -132,9 +132,6 @@
     <Content Include="img\HDpix\Wave Splash.jpg" />
     <Content Include="img\header_bg.jpg" />
     <Content Include="img\Col_Adam\Col_Adam.JPG" />
-    <Content Include="img\map\Map%28with colors and wording%29.jpg" />
-    <Content Include="img\map\Map%28with colors%29.jpg" />
-    <Content Include="img\map\Map%28with curved lines%29.jpg" />
     <Content Include="img\map\Map.png" />
     <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
@@ -147,6 +144,7 @@
     <Content Include="img\HDpix\Winter.jpg" />
     <Content Include="img\Wedding Pictures\IMG_0303.JPG %282%29.JPG" />
     <Content Include="Scripts\Proposal.js" />
+    <Content Include="Scripts\WhereNow.js" />
     <Content Include="Styles\animations.css" />
     <Content Include="Styles\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap-theme.min.css" />
@@ -190,11 +188,12 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WhereNow_WS.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Connection.vb" />
     <Compile Include="Classes\Enumerations.vb" />
-    <Compile Include="Classes\MiscFunctions.vb" />
+    <Compile Include="Modules\MiscFunctions.vb" />
     <Compile Include="Classes\Objects.vb" />
     <Compile Include="Forms\Standard\About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
@@ -304,6 +303,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ObjectDataRetrieval.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -350,6 +350,10 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WhereNow_WS.asmx.vb">
+      <DependentUpon>WhereNow_WS.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

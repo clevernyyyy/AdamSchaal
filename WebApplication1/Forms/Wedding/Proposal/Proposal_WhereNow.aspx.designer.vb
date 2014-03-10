@@ -20,7 +20,7 @@ Partial Public Class Proposal_WhereNow
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnGetNow As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents btnGetNow As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''lblNow control.
@@ -32,11 +32,38 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblNow As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''txtNow  control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNow As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''btnGetAll control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnGetAll As Global.System.Web.UI.HtmlControls.HtmlAnchor
+    Protected WithEvents btnGetAll As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''lblAll control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAll As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtAll control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtAll As Global.System.Web.UI.WebControls.TextBox
 End Class

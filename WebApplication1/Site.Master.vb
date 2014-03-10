@@ -14,9 +14,7 @@ Public Class Site
     Private Sub HideShowMenuItems()
 
         If Debugger.IsAttached Then
-            'MiscFunctions.SetDisplay("inline", mnuProposalStory)
 
-            'mnuProposalStory.
 
         End If
 

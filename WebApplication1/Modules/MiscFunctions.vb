@@ -144,4 +144,62 @@ Module MiscFunctions
             Throw
         End Try
     End Sub
+
+
+
+#Region "Object Conversions"
+    Public Sub RowToObject(ByRef obj As Object, ByVal row As DataRow, ByVal ParamArray strIgnore() As String)
+        Dim t As Type = obj.GetType
+        Dim properties As System.Reflection.PropertyInfo() = t.GetProperties()
+
+        For Each prop In properties
+            Try
+                If Not prop.GetSetMethod Is Nothing Then
+                    If strIgnore.Length = 0 Then
+                        prop.SetValue(obj, row.Item(prop.Name), Nothing)
+                    Else
+                        If Not strIgnore.Contains(prop.Name) Then
+                            prop.SetValue(obj, row.Item(prop.Name), Nothing)
+                        End If
+                    End If
+                End If
+            Catch ex As Exception
+                Throw
+            End Try
+        Next
+    End Sub
+    Public Sub ObejctToDataTable(ByRef dt As DataTable, ByVal objList As System.Collections.Generic.IEnumerable(Of Object))
+        dt.Clear()
+
+        If Not objList Is Nothing Then
+            For Each obj In objList
+                Dim dr As DataRow = dt.NewRow
+                ObejctToDataRow(dr, obj)
+                dt.Rows.Add(dr)
+            Next
+        End If
+    End Sub
+    Public Sub ObejctToDataRow(ByRef dr As DataRow, ByVal obj As Object)
+        Dim t As Type = obj.GetType
+        Dim properties As System.Reflection.PropertyInfo() = t.GetProperties()
+
+        For Each col As DataColumn In dr.Table.Columns
+            Try
+                For Each prop In properties
+                    Try
+                        If prop.Name = col.ColumnName Then
+
+                            dr.Item(col.ColumnName) = If(prop.GetValue(obj, Nothing), DBNull.Value)
+                            Exit For
+                        End If
+                    Catch ex As Exception
+                        Throw ex
+                    End Try
+                Next
+            Catch ex As Exception
+                Throw ex
+            End Try
+        Next
+    End Sub
+#End Region
 End Module

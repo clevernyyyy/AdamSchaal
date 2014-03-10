@@ -4,25 +4,26 @@ Public Class Proposal_WhereNow
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        AddGetNowJavaScript(btnGetNow, txtNow, lblNow)
+        AddGetAllJavaScript(btnGetAll, txtAll, lblAll)
 
     End Sub
 
 
 #Region "Buttons"
 
-    Private Sub btnGetNow_ServerClick(sender As Object, e As System.EventArgs) Handles btnGetNow.ServerClick
-        Dim dtDisplay As DataTable
-        dtDisplay = WhatIsHappening(False)
+    'Private Sub btnGetNow_Click(sender As Object, e As System.EventArgs) Handles btnGetNow.Click
+    '    Dim dtDisplay As DataTable
+    '    dtDisplay = WhatIsHappening(False)
 
-        lblNow.Text = dtDisplay.Rows(0).Item("cContent")
+    '    lblNow.Text = dtDisplay.Rows(0).Item("cContent")
 
-    End Sub
+    'End Sub
 
-    Private Sub btnGetAll_ServerClick(sender As Object, e As System.EventArgs) Handles btnGetAll.ServerClick
-        Dim dtDisplay As DataTable
-        dtDisplay = WhatIsHappening(True)
-    End Sub
+    'Private Sub btnGetAll_ServerClick(sender As Object, e As System.EventArgs) Handles btnGetAll.ServerClick
+    '    Dim dtDisplay As DataTable
+    '    dtDisplay = WhatIsHappening(True)
+    'End Sub
 
 #End Region
 
@@ -43,6 +44,27 @@ Public Class Proposal_WhereNow
         Return dt
     End Function
 
+#End Region
+
+#Region "JavaScript"
+    Public Sub AddGetNowJavaScript(ByVal btn As HtmlControl, ByVal txt As TextBox, ByVal lbl As Label)
+        Dim strJava As String
+
+        'Shows info from SQL if button is pressed
+        strJava = "javascript:getNow(" + txt.ClientID + _
+            ", " + lbl.ClientID + ");"
+        btn.Attributes.Add("onclick", strJava)
+
+    End Sub
+    Public Sub AddGetAllJavaScript(ByVal btn As HtmlControl, ByVal txt As TextBox, ByVal lbl As Label)
+        Dim strJava As String
+
+        'Shows info from SQL if button is pressed
+        strJava = "javascript:getAll(" + txt.ClientID + _
+            ", " + lbl.ClientID + ");"
+        btn.Attributes.Add("onclick", strJava)
+
+    End Sub
 #End Region
 
 

@@ -6,11 +6,13 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
 <br />
 <br />
     <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
+    <script type="text/javascript" src="/Scripts/WhereNow.js?021714"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <div class="container">
+    <div class="container" runat="server">
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-9">
+                <form runat="server">
                 <p class="pull-right visible-xs">
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
                         Toggle nav</button>
@@ -21,15 +23,16 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
                         <hr />
                         <h3>
                             <!-- Button -->
-                            <a id="btnGetNow" runat="server" href= "" class="btn btn-primary" data-text-loading="Loading..."
+                            <btn id="btnGetNow" runat="server" href= "" class="btn btn-primary" data-text-loading="Loading..."
                                 style="width:140px; margin-right:20px;" data-reset-text="Try that again">
                                 What's Going On?
-                            </a>
+                            </btn>
                             <!-- Heading -->
                             Find out what we're doing at this very instant!
                         </h3>
 
                         <asp:Label ID="lblNow" runat="server" style="font-size:larger"></asp:Label>
+                        <asp:TextBox ID="txtNow" runat="server" style="font-size:larger"></asp:TextBox>
                         <%--<p>Where the result will go.</p>--%>
 
                         <br />
@@ -38,16 +41,20 @@ CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereN
 
                         <h3>
                             <!-- Cheat Button -->
-                            <a id="btnGetAll" href= "" runat="server" class="btn btn-danger" data-text-loading="Loading..." 
+                            <btn id="btnGetAll" href= "" runat="server" class="btn btn-danger" data-text-loading="Loading..." 
                                 style="width:140px; margin-right:20px;" data-reset-text="Try that again">
                                 Cheat Code
-                            </a>
+                            </btn>
                             <!-- Heading -->
                             Wanna see the whole itinerary?
                         </h3>
-                        <p>Where the result will go.</p>
+                        
+                        <asp:Label ID="lblAll" runat="server" style="font-size:larger"></asp:Label>
+                        <asp:TextBox ID="txtAll" runat="server" style="font-size:larger"></asp:TextBox>
+                        <%-- <p>Where the result will go.</p>--%>
 
                 </div>
+                </form>
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
