@@ -93,6 +93,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon %282%29.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Forms\Standard\LandingPage.aspx" />
     <Content Include="Forms\Standard\UnderConstruction.aspx" />

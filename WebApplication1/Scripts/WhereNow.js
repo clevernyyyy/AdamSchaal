@@ -4,25 +4,25 @@
 });
 
 
-function getNow(txt, lbl) {
+function getNow( lbl) {
     // Fill stuff
     if (true)
-        loadResults("GetNow", txt, lbl);
+        loadResults("GetNow", lbl);
     else
         loadFail();
 }
 
 
-function getAll(txt, lbl) {
+function getAll( lbl) {
     // Fill stuff
     if (true)
-        loadResults("GetAll", txt, lbl);
+        loadResults("GetAll", lbl);
     else
         loadFail();
 }
 
 
-function loadResults(strType, txt, lbl)
+function loadResults(strType, lbl)
 {
     
     $.ajax({
@@ -31,7 +31,7 @@ function loadResults(strType, txt, lbl)
         //data: "{str : '" + "hi" + "' }",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
-        success: fillSuccess(txt, lbl),
+        success: fillSuccess(lbl),
         error: fillFail()
     });
 }
@@ -40,10 +40,10 @@ function loadFail() {
 
 }
 
-function fillSuccess(txt, lbl) {
+function fillSuccess(lbl) {
     return function (jqXhr, textStatus) {
         if (textStatus == "success") {
-            fillAll(jqXhr, txt, lbl);
+            fillAll(jqXhr, lbl);
         }
     };
 }
@@ -52,12 +52,29 @@ function fillFail(results) {
 
 }
 
-function fillAll(results, txt, lbl) {
+function fillAll(results, lbl) {
 
-    var txtBox = $(txt);
     var lblDisplay = $(lbl);
 
-    txtBox.val(results.d);
-    lblDisplay.val(results.d);
+    var obj = jQuery.parseJSON(results.d);
+
+    //Date Inception
+    var date_unix_I = obj.dInception; //.replace(/\//g, '');
+    var date_I = new Date(parseInt(date_unix_I.substr(6)));
+
+    //Date Expiration
+    var date_unix_E = obj.dExpiration; //.replace(/\//g, '');
+    var date_E = new Date(parseInt(date_unix_E.substr(6)));
+
+    //Location
+    var loc = obj.cLocation;
+
+    //Content
+    var cont = obj.cContent;
+
+    //Image
+    var img = obj.cImage;         
+
+    lblDisplay.html(date_I.toDateString() + '  -  ' + date_E.toDateString() + '  -  ' + loc + '  <br/>  '  + cont);
 
 }

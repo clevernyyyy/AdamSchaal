@@ -30,7 +30,7 @@ Public Class WhereNow_WS
             str = New JavaScriptSerializer().Serialize(pkg.WhereNow)
 
 
-            Return "Hello World - Now"
+            Return str
         Catch ex As Exception
             Throw New Exception
         End Try

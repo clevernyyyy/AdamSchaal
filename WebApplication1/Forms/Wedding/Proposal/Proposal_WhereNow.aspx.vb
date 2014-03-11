@@ -4,8 +4,8 @@ Public Class Proposal_WhereNow
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        AddGetNowJavaScript(btnGetNow, txtNow, lblNow)
-        AddGetAllJavaScript(btnGetAll, txtAll, lblAll)
+        AddGetNowJavaScript(btnGetNow, lblNow)
+        AddGetAllJavaScript(btnGetAll, lblAll)
 
     End Sub
 
@@ -47,21 +47,19 @@ Public Class Proposal_WhereNow
 #End Region
 
 #Region "JavaScript"
-    Public Sub AddGetNowJavaScript(ByVal btn As HtmlControl, ByVal txt As TextBox, ByVal lbl As Label)
+    Public Sub AddGetNowJavaScript(ByVal btn As HtmlControl, ByVal lbl As Label)
         Dim strJava As String
 
         'Shows info from SQL if button is pressed
-        strJava = "javascript:getNow(" + txt.ClientID + _
-            ", " + lbl.ClientID + ");"
+        strJava = "javascript:getNow(" + lbl.ClientID + ");"
         btn.Attributes.Add("onclick", strJava)
 
     End Sub
-    Public Sub AddGetAllJavaScript(ByVal btn As HtmlControl, ByVal txt As TextBox, ByVal lbl As Label)
+    Public Sub AddGetAllJavaScript(ByVal btn As HtmlControl, ByVal lbl As Label)
         Dim strJava As String
 
         'Shows info from SQL if button is pressed
-        strJava = "javascript:getAll(" + txt.ClientID + _
-            ", " + lbl.ClientID + ");"
+        strJava = "javascript:getAll(" + lbl.ClientID + ");"
         btn.Attributes.Add("onclick", strJava)
 
     End Sub
