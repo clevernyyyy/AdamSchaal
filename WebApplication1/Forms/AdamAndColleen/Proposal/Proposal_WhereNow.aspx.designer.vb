@@ -32,15 +32,6 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblNow As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtNow  control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtNow As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''btnGetAll control.
     '''</summary>
     '''<remarks>
@@ -59,11 +50,29 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblAll As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtAll control.
+    '''rptDayOne control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtAll As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents rptDayOne As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''rptDayTwo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rptDayTwo As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''rptDayThree control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rptDayThree As Global.System.Web.UI.WebControls.Repeater
 End Class

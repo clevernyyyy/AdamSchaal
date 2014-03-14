@@ -95,13 +95,13 @@
   <ItemGroup>
     <Content Include="favicon %282%29.ico" />
     <Content Include="favicon.ico" />
-    <Content Include="Forms\Standard\LandingPage.aspx" />
+    <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
     <Content Include="Forms\Standard\UnderConstruction.aspx" />
-    <Content Include="Forms\Wedding\Honeymoon\Honeymoon.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx" />
-    <Content Include="Forms\Wedding\Wedding\Wedding.aspx" />
+    <Content Include="Forms\AdamAndColleen\Honeymoon\Honeymoon.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_PicVideos.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_WhereNow.aspx" />
+    <Content Include="Forms\AdamAndColleen\Wedding\Wedding.aspx" />
     <Content Include="img\arrow_left.png" />
     <Content Include="img\arrow_right.png" />
     <Content Include="img\bg\divider1.jpg" />
@@ -162,14 +162,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Forms\Standard\About.aspx" />
     <Content Include="Forms\Standard\Contact.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_Story.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_Story.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_How.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx" />
-    <Content Include="Forms\Wedding\Proposal\Proposal_Where.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_How.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_Timeline.aspx" />
+    <Content Include="Forms\AdamAndColleen\Proposal\Proposal_Where.aspx" />
     <Content Include="Scripts\interact.js" />
     <Content Include="Scripts\jquery-func.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
@@ -216,11 +216,11 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Standard\LandingPage.aspx.designer.vb">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="Forms\AdamAndColleen\AdamAndCol.aspx.designer.vb">
+      <DependentUpon>AdamAndCol.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Standard\LandingPage.aspx.vb">
-      <DependentUpon>LandingPage.aspx</DependentUpon>
+    <Compile Include="Forms\AdamAndColleen\AdamAndCol.aspx.vb">
+      <DependentUpon>AdamAndCol.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Forms\Standard\UnderConstruction.aspx.designer.vb">
@@ -230,31 +230,31 @@
       <DependentUpon>UnderConstruction.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Honeymoon\Honeymoon.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Honeymoon\Honeymoon.aspx.designer.vb">
       <DependentUpon>Honeymoon.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Honeymoon\Honeymoon.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Honeymoon\Honeymoon.aspx.vb">
       <DependentUpon>Honeymoon.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal.aspx.designer.vb">
       <DependentUpon>Proposal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal.aspx.vb">
       <DependentUpon>Proposal.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_PicVideos.aspx.designer.vb">
       <DependentUpon>Proposal_PicVideos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_PicVideos.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_PicVideos.aspx.vb">
       <DependentUpon>Proposal_PicVideos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Story.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Story.aspx.designer.vb">
       <DependentUpon>Proposal_Story.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Story.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Story.aspx.vb">
       <DependentUpon>Proposal_Story.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -293,17 +293,17 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_WhereNow.aspx.designer.vb">
       <DependentUpon>Proposal_WhereNow.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_WhereNow.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_WhereNow.aspx.vb">
       <DependentUpon>Proposal_WhereNow.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Wedding\Wedding.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Wedding\Wedding.aspx.designer.vb">
       <DependentUpon>Wedding.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Wedding\Wedding.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Wedding\Wedding.aspx.vb">
       <DependentUpon>Wedding.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -330,24 +330,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_How.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_How.aspx.designer.vb">
       <DependentUpon>Proposal_How.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_How.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_How.aspx.vb">
       <DependentUpon>Proposal_How.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Timeline.aspx.designer.vb">
       <DependentUpon>Proposal_Timeline.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Timeline.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Timeline.aspx.vb">
       <DependentUpon>Proposal_Timeline.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Where.aspx.designer.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Where.aspx.designer.vb">
       <DependentUpon>Proposal_Where.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Wedding\Proposal\Proposal_Where.aspx.vb">
+    <Compile Include="Forms\AdamAndColleen\Proposal\Proposal_Where.aspx.vb">
       <DependentUpon>Proposal_Where.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>

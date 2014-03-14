@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="LandingPage.aspx.vb"
+﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="AdamAndCol.aspx.vb"
     Inherits="WebApplication1.LandingPage" %>
 
 
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
- <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
         <!-- ==== HEADERWRAP ==== -->
         <div id="headerwrap" id="home" name="home">
             <header class="clearfix">
