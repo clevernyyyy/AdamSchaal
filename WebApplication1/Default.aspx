@@ -41,10 +41,10 @@
 					<br />
 					<br />
 					<br />
-					<h3 style="color:White">This site is dedicated to my Girlfriend.</h3>
+					<%--<h3 style="color:White">This site is dedicated to my Girlfriend.</h3>--%>
 			</header>
 		</div>
-		<!-- ==== GREYWRAP ==== -->
+<%--		<!-- ==== GREYWRAP ==== -->
 
 		<div id="greywrap">
 			<div class="row">
@@ -77,7 +77,7 @@
 				<!-- col-lg-4 -->
 			</div>
 			<!-- row -->
-		</div>
+		</div>--%>
 
 
 		<!-- ==== ABOUT ==== -->

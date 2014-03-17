@@ -104,11 +104,6 @@
     <Content Include="Forms\AdamAndColleen\Wedding\Wedding.aspx" />
     <Content Include="img\arrow_left.png" />
     <Content Include="img\arrow_right.png" />
-    <Content Include="img\bg\divider1.jpg" />
-    <Content Include="img\bg\divider2.jpg" />
-    <Content Include="img\bg\divider3.jpg" />
-    <Content Include="img\bg\divider4.jpg" />
-    <Content Include="img\bg\divider6.jpg" />
     <Content Include="img\Col_Adam\10-03-09.JPG" />
     <Content Include="img\Col_Adam\10-2-2010.JPG" />
     <Content Include="img\Col_Adam\11-08-07 7.JPG" />
@@ -140,6 +135,9 @@
     <Content Include="img\header_bg.jpg" />
     <Content Include="img\Col_Adam\Col_Adam.JPG" />
     <Content Include="img\map\Map.png" />
+    <Content Include="img\Menu\Honeymoon.gif" />
+    <Content Include="img\Menu\Proposal.png" />
+    <Content Include="img\Menu\Wedding.jpg" />
     <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05478.JPG" />
@@ -374,7 +372,6 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <None Include="img\.DS_Store" />
-    <None Include="img\bg\.DS_Store" />
     <None Include="img\portfolio\.DS_Store" />
     <None Include="img\team\.DS_Store" />
     <None Include="Styles\bootstrap-theme.css.map" />

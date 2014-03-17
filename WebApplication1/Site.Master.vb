@@ -6,6 +6,18 @@ Public Class Site
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+        If Request.Url.AbsoluteUri.Contains("AdamAndCol") Then
+            mnuAdamAndCol.Visible = True
+        Else
+            mnuAdamAndCol.Visible = False
+        End If
+
+        If Request.Url.AbsoluteUri.Contains("Default") Then
+            mnuHome.Visible = True
+        Else
+            mnuHome.Visible = False
+        End If
+
         HideShowMenuItems()
 
     End Sub
