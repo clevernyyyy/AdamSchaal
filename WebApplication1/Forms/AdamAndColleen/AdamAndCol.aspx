@@ -24,6 +24,7 @@
 		type='text/css' />
 	<script type="text/javascript" src="/Scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
+	<script type="text/javascript" src="/Scripts/Proposal.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -49,32 +50,41 @@
 				<div class="col-lg-4 callout">
 					<span class="icon icon-heart"></span>
 					<h2>
-						Propsal</h2>
+						<a style="color:Gray" href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">Proposal</a></h2>
 					<p>
-						Click here to see more about my proposal.
+						Click <a style="color:Gray" href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">here</a> to see more about my proposal.
 					</p>
 				</div>
 				<!-- col-lg-4 -->
 				<div class="col-lg-4 callout">
 					<span class="icon icon-people"></span>
 					<h2>
-						Wedding</h2>
+						<a style="color:Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">Wedding</a></h2>
 					<p>
-						Click here to learn more about our wedding.
+						Click <a style="color:Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">here</a> to learn more about our wedding.
 					</p>
 				</div>
 				<!-- col-lg-4 -->
 				<div class="col-lg-4 callout">
 					<span class="icon icon-bed"></span>
 					<h2>
-						Honeymoon</h2>
+						<a style="color:Gray" href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">Honeymoon</a></h2>
 					<p>
-						Click here to check out details about our awesome honeymoon.
+						Click <a style="color:Gray" href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">here</a> to check out details about our awesome honeymoon.
 					</p>
 				</div>
 				<!-- col-lg-4 -->
 			</div>
 			<!-- row -->
+		</div>
+		<div class="centered">
+			<button id="btnSpecialThanks" type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
+			data-placement="top" data-title="Special Thanks" 
+			data-content="To Lauren - for all your Boston knowledge and help.
+						  To Mom - for all your help in planning.
+						  To Susan - for helping me secretly arrange Colleen's time off.
+						  To Andrea - for your advice of things to do in Boston.
+						  To My Coworkers - who's interest and advice helped me complete this site.">Special Thanks</button>
 		</div>
 	</body>
 </asp:Content>

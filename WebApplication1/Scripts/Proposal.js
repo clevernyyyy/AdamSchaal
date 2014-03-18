@@ -13,6 +13,11 @@
         event.preventDefault();
     });
 
+
+    $('#btnSpecialThanks').popover({
+        template: '<div class="popover special-class"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
+    });
+
 });
 
 

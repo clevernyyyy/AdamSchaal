@@ -4,6 +4,13 @@
  *
  */
 
+/*Pop-over Special Class*/
+.popover special-class 
+{
+    width:600px;
+}
+
+
 
 /* ==========================================================================
    Base Styles and Bootstrap Modifications

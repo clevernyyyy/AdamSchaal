@@ -59,21 +59,21 @@
                     </ul>
                     <ul runat="server" id="mnuAdamAndCol" class="nav navbar-nav">
                         <li>
-                            <img class="img img-rounded" src="/img/Menu/Proposal.png" height="50px" width="50px" alt=""/>
+                            <img class="img img-rounded" src="/img/Menu/Proposal-alpha.png" height="50px" width="50px" alt=""/>
                         </li>
                         <li><a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">Proposal</a></li>
                         <li>
-                            <img class="img img-rounded" src="/img/Menu/Wedding.jpg" height="50px" width="50px" alt=""/>
+                            <img class="img img-rounded" src="/img/Menu/Wedding-alpha.png" height="50px" width="50px" alt=""/>
                         </li>
                         <li><a href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">Wedding</a></li>
                         <li>
-                            <img class="img img-rounded" src="/img/Menu/Honeymoon.gif" height="50px" width="50px" alt=""/>
+                            <img class="img img-rounded" src="/img/Menu/Honeymoon-alpha.png" height="50px" width="50px" alt=""/>
                         </li>
                         <li><a href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">Honeymoon</a></li>
                     
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/Forms/AdamAndColleen/AdamAndCol.aspx">Wedding</a></li>
+                        <li><a href="/Forms/AdamAndColleen/AdamAndCol.aspx">Adam & Colleen</a></li>
 
 <%--                         <li id="mnuAC" class="dropdown">
                             <a href="/Forms/AdamAndColleen/AdamAndCol.aspx" class="dropdown-toggle" data-toggle="dropdown">Adam & Colleen <b class="caret"></b></a>

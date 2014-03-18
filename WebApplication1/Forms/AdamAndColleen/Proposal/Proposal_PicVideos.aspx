@@ -35,7 +35,7 @@
                                 <p>I tell Colleen about the trip to Boston.</p>
                             </div>
                             <div class="tab-pane" id="boston">
-                                <p>We've have had a heck of a time in Boston.  Here are some pictures!</p>
+                                <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
                             </div>
                             <div class="tab-pane" id="proposal">
                                 <p>Would you like to see the proposal take place?</p>

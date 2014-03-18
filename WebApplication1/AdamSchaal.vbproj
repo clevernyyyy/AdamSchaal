@@ -135,8 +135,11 @@
     <Content Include="img\header_bg.jpg" />
     <Content Include="img\Col_Adam\Col_Adam.JPG" />
     <Content Include="img\map\Map.png" />
+    <Content Include="img\Menu\Honeymoon-alpha.png" />
     <Content Include="img\Menu\Honeymoon.gif" />
+    <Content Include="img\Menu\Proposal-alpha.png" />
     <Content Include="img\Menu\Proposal.png" />
+    <Content Include="img\Menu\Wedding-alpha.png" />
     <Content Include="img\Menu\Wedding.jpg" />
     <Content Include="img\PersonalPictures\NewYork\DSC05281.JPG" />
     <Content Include="img\PersonalPictures\NewYork\DSC05417.JPG" />
