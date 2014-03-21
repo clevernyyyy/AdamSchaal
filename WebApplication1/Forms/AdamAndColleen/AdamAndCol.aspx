@@ -15,7 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
 	<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 	<!-- Custom styles for this template -->
-	<link href="/Styles/main.css" rel="stylesheet" />
+	<%--<link href="/Styles/main.css" rel="stylesheet" />--%>
 	<link href="/Styles/icomoon.css" rel="stylesheet" />
 	<link href="/Styles/animate-custom.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic'
@@ -29,7 +29,7 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 		<!-- ==== HEADERWRAP ==== -->
-		<div id="headerwrap" id="home" name="home">
+		<div id="headerwrapAdamAndCol" id="home" name="home">
 			<header class="clearfix">
 					<h1><span class="/Styles/icon icon-pyramid"></span></h1>
 					<p>Welcome to AdamSchaal.com</p>
