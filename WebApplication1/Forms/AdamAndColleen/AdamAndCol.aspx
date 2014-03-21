@@ -77,14 +77,11 @@
 			</div>
 			<!-- row -->
 		</div>
-		<div class="centered">
+		<div class="row centered">
 			<button id="btnSpecialThanks" type="button" class="btn btn-default" data-container="body" data-toggle="popover" 
-			data-placement="top" data-title="Special Thanks" 
-			data-content="To Lauren - for all your Boston knowledge and help.
-						  To Mom - for all your help in planning.
-						  To Susan - for helping me secretly arrange Colleen's time off.
-						  To Andrea - for your advice of things to do in Boston.
-						  To My Coworkers - who's interest and advice helped me complete this site.">Special Thanks</button>
+			data-placement="top" data-title="Special Thanks">Special Thanks</button>
 		</div>
 	</body>
 </asp:Content>
+
+
