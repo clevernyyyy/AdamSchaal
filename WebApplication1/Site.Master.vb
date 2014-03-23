@@ -14,8 +14,12 @@ Public Class Site
 
         If Request.Url.AbsoluteUri.Contains("Default") Then
             mnuHome.Visible = True
+            mnuHomeRight.Visible = False
+            mnuAdamAndColRight.Visible = True
         Else
             mnuHome.Visible = False
+            mnuHomeRight.Visible = True
+            mnuAdamAndColRight.Visible = False
         End If
 
         HideShowMenuItems()

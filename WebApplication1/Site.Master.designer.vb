@@ -32,13 +32,31 @@ Partial Public Class Site
     Protected WithEvents mnuHome As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
-    '''mnuAdamAndCol  control.
+    '''mnuAdamAndCol control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents mnuAdamAndCol As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''mnuAdamAndColRight  control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents mnuAdamAndColRight As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''mnuHomeRight control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents mnuHomeRight As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''MainContent control.
