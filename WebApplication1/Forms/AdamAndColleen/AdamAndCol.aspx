@@ -22,6 +22,8 @@
 		rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet'
 		type='text/css' />
+	<link rel="shortcut icon" href="/favicon (2) (1).ico" type="image/x-icon">
+	<link rel="icon" href="/favicon (2).ico" type="image/x-icon">
 	<script type="text/javascript" src="/Scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
 	<script type="text/javascript" src="/Scripts/Proposal.js"></script>
@@ -40,7 +42,7 @@
 					<br />
 					<br />
 					<br />
-					<h3 style="color:White">This site is dedicated to my Girlfriend.</h3>
+					<h3 class="black-shadow" style="color:White">This site is dedicated to my Girlfriend.</h3>
 			</header>
 		</div>
 		<!-- ==== GREYWRAP ==== -->
