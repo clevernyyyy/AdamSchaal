@@ -150,6 +150,8 @@
     <Content Include="img\HDpix\train tunnel.jpg" />
     <Content Include="img\HDpix\washington.jpg" />
     <Content Include="img\HDpix\Winter.jpg" />
+    <Content Include="img\Videos\IMG_2500.MOV" />
+    <Content Include="img\Videos\IMG_2501.MOV" />
     <Content Include="img\Wedding Pictures\IMG_0303.JPG %282%29.JPG" />
     <Content Include="Scripts\Proposal.js" />
     <Content Include="Scripts\WhereNow.js" />

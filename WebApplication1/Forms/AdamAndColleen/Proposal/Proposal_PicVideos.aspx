@@ -31,8 +31,38 @@
                             <div class="tab-pane active" id="omaha">
                                 <p>Here are some pictures and videos from Omaha.</p>
 
+                                <h1>Pictures: <asp:Literal ID="litFromToPictures" runat="server"></asp:Literal></h1>
+                                <hr />
+                                <div style="margin: auto; width: 740px;">
+                                    <asp:Repeater ID="rptPictures" runat="server">
+                                        <HeaderTemplate>
+                
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                           <%-- <a id='<%# "tl_" & Eval("nNumber") %>' class="thumbLink" href='<%# "." & strPhotoDir & Eval("cFileName") %>'><img id='<%# "ti_" & Eval("nNumber") %>' src='<%# "." & strPhotoDir & "thumb/" & Eval("cFileName") %>' alt='<%# Eval("cFileName") %>' class="thumbnail"></a>
+                                        --%>
+                                            <a id="link" class="thumb" runat="server"><img id="img" runat="server"/></a>
+                                        
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            <div style="clear: left;"></div>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                </div>
+
                                 <br />
                                 <p>I tell Colleen about the trip to Boston.</p>
+                                <p>Test One</p>
+                                <embed src="/img/Videos/IMG_2500.MOV"
+                                Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
+                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_One"></embed>
+
+                                <p>Test Two</p>
+                                <embed src="/img/Videos/IMG_2501.MOV" 
+                                Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
+                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_Two"></embed>
+
+                                
                             </div>
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>

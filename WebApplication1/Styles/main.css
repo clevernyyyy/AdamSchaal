@@ -19,6 +19,29 @@
 }
 
 
+/*Thumb*/
+.thumb
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000000;
+    display: inline-block;
+    float: left;
+    height: 105px;
+    line-height: 105px;
+    margin: 4px;
+    text-align: center;
+    width: 120px;
+}
+
+.thumb:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+    border: 1px solid #0066CC;
+    box-shadow: 0 0 5px #0066CC;
+}
+
+
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
