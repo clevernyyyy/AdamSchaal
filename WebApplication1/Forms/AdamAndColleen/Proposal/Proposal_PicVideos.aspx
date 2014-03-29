@@ -1,10 +1,22 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Proposal_PicVideos.aspx.vb" Inherits="WebApplication1.Proposal_PicVideos" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
-    <br />
-    <br />
-    <br />
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/Styles/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/Scripts/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/Styles/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/Scripts/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/Scripts/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="/Styles/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/Scripts/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
     <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
+        <br />
+<br />
+<br />
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">
@@ -41,8 +53,15 @@
                                         <ItemTemplate>
                                            <%-- <a id='<%# "tl_" & Eval("nNumber") %>' class="thumbLink" href='<%# "." & strPhotoDir & Eval("cFileName") %>'><img id='<%# "ti_" & Eval("nNumber") %>' src='<%# "." & strPhotoDir & "thumb/" & Eval("cFileName") %>' alt='<%# Eval("cFileName") %>' class="thumbnail"></a>
                                         --%>
-                                            <a id="link" class="thumb" runat="server"><img id="img" runat="server"/></a>
-                                        
+                                            <%--<a id="link" class="thumb" runat="server"><img id="img" runat="server"/></a>--%>
+                                            
+                                            
+                                            <a id="link" runat="server" class="fancybox thumb" rel="gallery"><img  id="img" runat="server" alt="" /></a>
+                                            
+                                            
+                                            
+                                            <%--<a class="fancybox" rel="group"><img src="small_image_2.jpg" alt="" /></a>--%>
+
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div style="clear: left;"></div>

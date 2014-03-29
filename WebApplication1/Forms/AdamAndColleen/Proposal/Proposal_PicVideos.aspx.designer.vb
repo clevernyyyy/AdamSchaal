@@ -23,24 +23,6 @@ Partial Public Class Proposal_PicVideos
     Protected WithEvents litFromToPictures As Global.System.Web.UI.WebControls.Literal
 
     '''<summary>
-    '''topLeftArrow control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents topLeftArrow As Global.System.Web.UI.HtmlControls.HtmlAnchor
-
-    '''<summary>
-    '''topRightArrow control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents topRightArrow As Global.System.Web.UI.HtmlControls.HtmlAnchor
-
-    '''<summary>
     '''rptPictures control.
     '''</summary>
     '''<remarks>
@@ -48,22 +30,4 @@ Partial Public Class Proposal_PicVideos
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rptPictures As Global.System.Web.UI.WebControls.Repeater
-
-    '''<summary>
-    '''bottomLeftArrow control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents bottomLeftArrow As Global.System.Web.UI.HtmlControls.HtmlAnchor
-
-    '''<summary>
-    '''bottomRightArrow control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents bottomRightArrow As Global.System.Web.UI.HtmlControls.HtmlAnchor
 End Class
