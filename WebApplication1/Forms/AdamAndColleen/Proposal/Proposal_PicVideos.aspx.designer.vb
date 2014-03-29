@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class Proposal_PicVideos
 
     '''<summary>
-    '''litFromToPictures control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents litFromToPictures As Global.System.Web.UI.WebControls.Literal
-
-    '''<summary>
     '''rptPictures control.
     '''</summary>
     '''<remarks>
@@ -30,4 +21,13 @@ Partial Public Class Proposal_PicVideos
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rptPictures As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''Repeater1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Repeater1 As Global.System.Web.UI.WebControls.Repeater
 End Class

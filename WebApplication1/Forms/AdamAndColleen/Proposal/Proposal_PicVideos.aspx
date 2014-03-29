@@ -42,32 +42,18 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="omaha">
                                 <p>Here are some pictures and videos from Omaha.</p>
-
-                                <h1>Pictures: <asp:Literal ID="litFromToPictures" runat="server"></asp:Literal></h1>
                                 <hr />
                                 <div style="margin: auto; width: 740px;">
                                     <asp:Repeater ID="rptPictures" runat="server">
-                                        <HeaderTemplate>
-                
-                                        </HeaderTemplate>
-                                        <ItemTemplate>
-                                           <%-- <a id='<%# "tl_" & Eval("nNumber") %>' class="thumbLink" href='<%# "." & strPhotoDir & Eval("cFileName") %>'><img id='<%# "ti_" & Eval("nNumber") %>' src='<%# "." & strPhotoDir & "thumb/" & Eval("cFileName") %>' alt='<%# Eval("cFileName") %>' class="thumbnail"></a>
-                                        --%>
-                                            <%--<a id="link" class="thumb" runat="server"><img id="img" runat="server"/></a>--%>
-                                            
-                                            
+                                        <ItemTemplate>                                            
                                             <a id="link" runat="server" class="fancybox thumb" rel="gallery"><img  id="img" runat="server" alt="" /></a>
-                                            
-                                            
-                                            
-                                            <%--<a class="fancybox" rel="group"><img src="small_image_2.jpg" alt="" /></a>--%>
-
                                         </ItemTemplate>
                                         <FooterTemplate>
                                             <div style="clear: left;"></div>
                                         </FooterTemplate>
                                     </asp:Repeater>
                                 </div>
+                                <hr />
 
                                 <br />
                                 <p>I tell Colleen about the trip to Boston.</p>
@@ -85,6 +71,17 @@
                             </div>
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
+                                <hr />
+                                <div style="margin: auto; width: 740px;">
+                                    <asp:Repeater ID="Repeater1" runat="server">
+                                        <ItemTemplate>                                            
+                                            <a id="link" runat="server" class="fancybox thumb" rel="gallery"><img  id="img" runat="server" alt="" /></a>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            <div style="clear: left;"></div>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                </div>
                             </div>
                             <div class="tab-pane" id="proposal">
                                 <p>Would you like to see the proposal take place?</p>
