@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,6 +97,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\ctrl_rptPhoto.aspx" />
     <Content Include="favicon %282%29.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
@@ -221,6 +226,13 @@
   <ItemGroup>
     <Compile Include="Classes\Connection.vb" />
     <Compile Include="Classes\Enumerations.vb" />
+    <Compile Include="Controls\ctrl_rptPhoto.aspx.designer.vb">
+      <DependentUpon>ctrl_rptPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrl_rptPhoto.aspx.vb">
+      <DependentUpon>ctrl_rptPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Modules\MiscFunctions.vb" />
     <Compile Include="Classes\Objects.vb" />
     <Compile Include="Forms\Standard\About.aspx.designer.vb">

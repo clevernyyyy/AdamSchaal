@@ -14,18 +14,15 @@
     <script type="text/javascript" src="/Scripts/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
     <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
-        <br />
-<br />
-<br />
+    
+    <br />
+    <br />
+    <br />
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-9">
-<%--                <p class="pull-right visible-xs">
-
-
-                </p>--%>
                 <div class="slideUp propContent" style="min-height:900px">
                     <h1 class="centered">Pictures and Videos</h1>
                         <hr />
@@ -43,6 +40,9 @@
                             <div class="tab-pane active" id="omaha">
                                 <p>Here are some pictures and videos from Omaha.</p>
                                 <hr />
+                                
+                                <!--  Insert Control Here  -->
+                                
                                 <div style="margin: auto; width: 740px;">
                                     <asp:Repeater ID="rptPictures" runat="server">
                                         <ItemTemplate>                                            
@@ -72,28 +72,29 @@
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
                                 <hr />
-                                <div style="margin: auto; width: 740px;">
-                                    <asp:Repeater ID="Repeater1" runat="server">
-                                        <ItemTemplate>                                            
-                                            <a id="link" runat="server" class="fancybox thumb" rel="gallery"><img  id="img" runat="server" alt="" /></a>
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <div style="clear: left;"></div>
-                                        </FooterTemplate>
-                                    </asp:Repeater>
-                                </div>
+                                
+                                <!--  Insert Control Here  -->
+
                             </div>
                             <div class="tab-pane" id="proposal">
                                 <p>Would you like to see the proposal take place?</p>
+                                
+                                <!--  Insert Control Here  -->
 
                                 <br />
                                 <p>I tell Colleen that Boston isn't our final destination.</p>
                             </div>
                             <div class="tab-pane" id="riveriaMaya">
                                 <p>Pictures from our time in Riveria Maya.</p>
+
+                                <!--  Insert Control Here  -->
+
                             </div>
                             <div class="tab-pane" id="randoms">
                                 <p>Some Random pictures from our trip!  Airlines, Other cities, etc...</p>
+                                
+                                <!--  Insert Control Here  -->
+
                             </div>
                         </div>
 
