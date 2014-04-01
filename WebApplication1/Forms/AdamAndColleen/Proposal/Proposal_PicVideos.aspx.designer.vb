@@ -14,11 +14,47 @@ Option Explicit On
 Partial Public Class Proposal_PicVideos
 
     '''<summary>
-    '''rptPictures control.
+    '''uctrlPhotoOmaha control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptPictures As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents uctrlPhotoOmaha As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoBoston control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoBoston As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoProposal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoProposal As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoRivieraMaya control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoRivieraMaya As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoRandoms control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoRandoms As Global.WebApplication1.ctrl_rptPhoto
 End Class

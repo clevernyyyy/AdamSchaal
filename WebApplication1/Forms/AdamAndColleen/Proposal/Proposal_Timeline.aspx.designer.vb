@@ -14,29 +14,29 @@ Option Explicit On
 Partial Public Class ProposalStory_Timeline
 
     '''<summary>
-    '''rptPlanning control.
+    '''rptFebruary control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptPlanning As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents rptFebruary As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
-    '''rptFirstLeg control.
+    '''rptMarch control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptFirstLeg As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents rptMarch As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
-    '''rptSecondLeg control.
+    '''rptApril control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptSecondLeg As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents rptApril As Global.System.Web.UI.WebControls.Repeater
 End Class

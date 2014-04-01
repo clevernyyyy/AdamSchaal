@@ -1,12 +1,13 @@
 ﻿Imports System.IO
 
 Public Class ctrl_rptPhoto
-    Inherits System.Web.UI.Page
+    Inherits System.Web.UI.UserControl
 
     Public dtPics As New DataTable
     Public nStart As Integer = 0
     Public nPicsPerPage As Integer = 50
     Public strPhotoDir As String = "/Photos/"
+    Public Property tabPhoto As String
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'Get page start data
@@ -37,9 +38,9 @@ Public Class ctrl_rptPhoto
             End With
 
             Dim nNumber As Integer = 0
-            Dim diPhotos As New DirectoryInfo(Server.MapPath("~" & strPhotoDir))
+            Dim diPhotos As New DirectoryInfo(Server.MapPath("~" & strPhotoDir & tabPhoto))
             For Each fiPhoto As FileInfo In diPhotos.GetFiles
-                If Array.IndexOf(New String() {".jpg", ".png", ".JPG", ".PNG"}, fiPhoto.Extension) <> -1 Then
+                If Array.IndexOf(New String() {".jpg", ".png", ".jpeg", ".JPG", ".PNG", ".JPEG"}, fiPhoto.Extension) <> -1 Then
 
                     'Fill data
                     Dim dr As DataRow = dtPics.NewRow
@@ -113,8 +114,8 @@ Public Class ctrl_rptPhoto
                 Dim a As HtmlControl = e.Item.FindControl("link")
                 Dim img As HtmlControl = e.Item.FindControl("img")
 
-                a.Attributes("href") = "../../../Photos/" + e.Item.DataItem("cFileName")
-                img.Attributes("src") = "../../../Photos/thumb/" + e.Item.DataItem("cFileName")
+                a.Attributes("href") = strPhotoDir + tabPhoto + e.Item.DataItem("cFileName")
+                img.Attributes("src") = strPhotoDir + tabPhoto + "thumb/" + e.Item.DataItem("cFileName")
 
         End Select
     End Sub

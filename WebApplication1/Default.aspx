@@ -95,7 +95,7 @@
 				Construction Superintendent, and now a Developer.  I think that development is where I needed to end up.  
 				<br />
 				<br />
-				I enjoy computers, working with them, building them, hacking them.  I'm currently a part-time graduate 
+				I enjoy computers, working with them, building them, and hacking them.  I'm currently a part-time graduate 
 				student in Information Assurance working towards my Master's Degree.  I really enjoy school and the groups 
 				I am a part of.  I participate in a computer security organization called NULLify - we engage in Capture 
 				the Flag events, Cyber Security Competitions, and other Hack-based events.
@@ -103,7 +103,7 @@
 			</div>
 			<!-- col-lg-2 -->
 			<div class="col-lg-2 centered">
-				<img class="img img-circle" src="/img/Col_Adam/Face.jpg" height="130px" width="120px"
+				<img class="img img-circle" src="/Photos/Col_Adam/Face.jpg" height="130px" width="120px"
 					alt="">
 				<br>
 				<h4>
@@ -113,7 +113,7 @@
 				<br />
 				<br />
 				
-				<%--<img class="img img-circle" src="/img/Col_Adam/CollFace.png" height="112px" width="115px"
+				<%--<img class="img img-circle" src="/Photos/Col_Adam/CollFace.png" height="112px" width="115px"
 					alt="">
 				<br>
 				<h4>
@@ -140,6 +140,7 @@
 					<li>University of Nebraska at Omaha (2012-today)
 						<ul type="circle" id="UNO_3">
 							<li>Working towards Master's Degree in Information Assurance and Cyber Security</li>
+							<li>Current 4.00/4.00 GPA</li>
 						</ul></li>
 			   </ul>
 			   

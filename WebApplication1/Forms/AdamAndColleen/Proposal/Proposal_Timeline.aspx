@@ -4,7 +4,6 @@
     <br />
     <br />
     <br />
-    <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">
@@ -17,14 +16,16 @@
                 <div class="slideUp propContent" style="min-height:900px">
                     <h1 class="centered">
                         Timeline of Events</h1>
+                        <p>In order to pull this off, I had to be quite sneaky!  Colleen can almost always tell when I'm hiding something so I had to be a good planner and enlist help!</p>
+                        <p>Read along to find out how I did it, the funny things that happened along the way, and how it all came together in the end.</p>
+                        
                         <hr />
-
                         <div class="panel-group" id="accordion">
                           <div class="panel panel-default">
                             <div class="panel-heading">
                               <h4 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                  Planning and Execution
+                                  February
                                 </a>
                               </h4>
                             </div>
@@ -39,7 +40,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:Repeater ID="rptPlanning" runat="server">
+                                        <asp:Repeater ID="rptFebruary" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
@@ -63,7 +64,7 @@
                             <div class="panel-heading">
                               <h4 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                  Omaha and Boston - First Leg
+                                  March
                                 </a>
                               </h4>
                             </div>
@@ -78,11 +79,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:Repeater ID="rptFirstLeg" runat="server">
+                                        <asp:Repeater ID="rptMarch" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>>
+                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>
                                                     </td>
                                                     <td>
                                                         <asp:Label ID="lblContent" runat="server"></asp:Label>
@@ -102,7 +103,7 @@
                             <div class="panel-heading">
                               <h4 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                  Riveria Maya - Second Leg
+                                  April
                                 </a>
                               </h4>
                             </div>
@@ -117,11 +118,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:Repeater ID="rptSecondLeg" runat="server">
+                                        <asp:Repeater ID="rptApril" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td>
-                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>>
+                                                        <asp:Label ID="lblDate" runat="server"></asp:Label>
                                                     </td>
                                                     <td>
                                                         <asp:Label ID="lblContent" runat="server"></asp:Label>
@@ -149,7 +150,7 @@
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_PicVideos.aspx" type="radio" class="list-group-item">Pictures and Video</a>
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_Timeline.aspx" type="radio" 
-                        class="list-group-item active">Proposal Timeline</a>
+                        class="list-group-item active">Planning Timeline</a>
                 </div>
             </div>
         </div>

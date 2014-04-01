@@ -10,16 +10,16 @@ Public Class ProposalStory_Timeline
         Dim dv As New DataView(dtTimeline)
         dv.RowFilter = "nAccordion = 1"
 
-        rptPlanning.DataSource = dv.ToTable
-        rptPlanning.DataBind()
+        rptFebruary.DataSource = dv.ToTable
+        rptFebruary.DataBind()
 
         dv.RowFilter = "nAccordion = 2"
-        rptFirstLeg.DataSource = dv.ToTable
-        rptFirstLeg.DataBind()
+        rptMarch.DataSource = dv.ToTable
+        rptMarch.DataBind()
 
         dv.RowFilter = "nAccordion = 3"
-        rptSecondLeg.DataSource = dv.ToTable
-        rptSecondLeg.DataBind()
+        rptApril.DataSource = dv.ToTable
+        rptApril.DataBind()
 
     End Sub
 
@@ -57,17 +57,17 @@ Public Class ProposalStory_Timeline
 
 
 #Region "DataBind"
-    Private Sub rptPlanning_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptPlanning.ItemDataBound
+    Private Sub rptFebruary_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptFebruary.ItemDataBound
         TableBind(e)
     End Sub
 
 
-    Private Sub rptFirstLeg_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptFirstLeg.ItemDataBound
+    Private Sub rptMarch_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptMarch.ItemDataBound
         TableBind(e)
     End Sub
 
 
-    Private Sub rptSecondLeg_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptSecondLeg.ItemDataBound
+    Private Sub rptApril_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptApril.ItemDataBound
         TableBind(e)
     End Sub
 #End Region

@@ -97,7 +97,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\ctrl_rptPhoto.aspx" />
+    <Content Include="bin\WebApplication1.dll" />
+    <Content Include="bin\WebApplication1.pdb" />
+    <Content Include="bin\WebApplication1.xml" />
+    <Content Include="Controls\ctrl_rptPhoto.ascx" />
     <Content Include="favicon %282%29.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
@@ -109,18 +112,18 @@
     <Content Include="Forms\AdamAndColleen\Wedding\Wedding.aspx" />
     <Content Include="img\arrow_left.png" />
     <Content Include="img\arrow_right.png" />
-    <Content Include="img\Col_Adam\10-03-09.JPG" />
-    <Content Include="img\Col_Adam\10-2-2010.JPG" />
-    <Content Include="img\Col_Adam\11-08-07 7.JPG" />
-    <Content Include="img\Col_Adam\12-27-05.jpg" />
-    <Content Include="img\Col_Adam\3-04-06 2.jpg" />
-    <Content Include="img\Col_Adam\5-24-08.jpg" />
-    <Content Include="img\Col_Adam\CollFace.png" />
-    <Content Include="img\Col_Adam\CollFace2.jpg" />
-    <Content Include="img\Col_Adam\Face.jpg" />
-    <Content Include="img\Col_Adam\IMG_0520.JPG" />
-    <Content Include="img\Col_Adam\IMG_8804.JPG" />
-    <Content Include="img\Col_Adam\scan0001.jpg" />
+    <Content Include="Photos\Col_Adam\10-03-09.JPG" />
+    <Content Include="Photos\Col_Adam\10-2-2010.JPG" />
+    <Content Include="Photos\Col_Adam\11-08-07 7.JPG" />
+    <Content Include="Photos\Col_Adam\12-27-05.jpg" />
+    <Content Include="Photos\Col_Adam\3-04-06 2.jpg" />
+    <Content Include="Photos\Col_Adam\5-24-08.jpg" />
+    <Content Include="Photos\Col_Adam\CollFace.png" />
+    <Content Include="Photos\Col_Adam\CollFace2.jpg" />
+    <Content Include="Photos\Col_Adam\Face.jpg" />
+    <Content Include="Photos\Col_Adam\IMG_0520.JPG" />
+    <Content Include="Photos\Col_Adam\IMG_8804.JPG" />
+    <Content Include="Photos\Col_Adam\scan0001.jpg" />
     <Content Include="img\fancyBox\blank.gif" />
     <Content Include="img\fancyBox\fancybox_buttons.png" />
     <Content Include="img\fancyBox\fancybox_loading%402x.gif" />
@@ -145,7 +148,7 @@
     <Content Include="img\HDpix\Sunset Reflection.jpg" />
     <Content Include="img\HDpix\Wave Splash.jpg" />
     <Content Include="img\header_bg.jpg" />
-    <Content Include="img\Col_Adam\Col_Adam.JPG" />
+    <Content Include="Photos\Col_Adam\Col_Adam.JPG" />
     <Content Include="img\map\Map.png" />
     <Content Include="img\Menu\Honeymoon-alpha.png" />
     <Content Include="img\Menu\Honeymoon.gif" />
@@ -164,7 +167,40 @@
     <Content Include="img\HDpix\Winter.jpg" />
     <Content Include="img\Videos\IMG_2500.MOV" />
     <Content Include="img\Videos\IMG_2501.MOV" />
-    <Content Include="img\Wedding Pictures\IMG_0303.JPG %282%29.JPG" />
+    <Content Include="Photos\Ring\IMG_0303.JPG %282%29.JPG" />
+    <Content Include="Photos\Boston\10-03-09.JPG" />
+    <Content Include="Photos\Boston\10-2-2010.JPG" />
+    <Content Include="Photos\Boston\11-08-07 7.JPG" />
+    <Content Include="Photos\Boston\Boston.jpg" />
+    <Content Include="Photos\Boston\thumb\10-03-09.JPG" />
+    <Content Include="Photos\Boston\thumb\10-2-2010.JPG" />
+    <Content Include="Photos\Boston\thumb\11-08-07 7.JPG" />
+    <Content Include="Photos\Omaha\North-America-Political-Outline-Map.png" />
+    <Content Include="Photos\Omaha\Omaha.jpg" />
+    <Content Include="Photos\Omaha\thumb\North-America-Political-Outline-Map.png" />
+    <Content Include="Photos\Omaha\thumb\TT27.png" />
+    <Content Include="Photos\Omaha\TT27.png" />
+    <Content Include="Photos\Proposal\12-27-05.jpg" />
+    <Content Include="Photos\Proposal\3-04-06 2.jpg" />
+    <Content Include="Photos\Proposal\5-24-08.jpg" />
+    <Content Include="Photos\Proposal\thumb\12-27-05.jpg" />
+    <Content Include="Photos\Proposal\thumb\3-04-06 2.jpg" />
+    <Content Include="Photos\Proposal\thumb\5-24-08.jpg" />
+    <Content Include="Photos\Randoms\CollFace.png" />
+    <Content Include="Photos\Randoms\CollFace2.jpg" />
+    <Content Include="Photos\Randoms\Col_Adam.JPG" />
+    <Content Include="Photos\Randoms\Face.jpg" />
+    <Content Include="Photos\Randoms\thumb\CollFace.png" />
+    <Content Include="Photos\Randoms\thumb\CollFace2.jpg" />
+    <Content Include="Photos\Randoms\thumb\Col_Adam.JPG" />
+    <Content Include="Photos\Randoms\thumb\Face.jpg" />
+    <Content Include="Photos\RivieraMaya\IMG_0520.JPG" />
+    <Content Include="Photos\RivieraMaya\IMG_8804.JPG" />
+    <Content Include="Photos\RivieraMaya\RivieraMaya.jpeg" />
+    <Content Include="Photos\RivieraMaya\scan0001.jpg" />
+    <Content Include="Photos\RivieraMaya\thumb\IMG_0520.JPG" />
+    <Content Include="Photos\RivieraMaya\thumb\IMG_8804.JPG" />
+    <Content Include="Photos\RivieraMaya\thumb\scan0001.jpg" />
     <Content Include="Scripts\jquery-1.10.1.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\jquery.fancybox-buttons.js" />
@@ -226,12 +262,12 @@
   <ItemGroup>
     <Compile Include="Classes\Connection.vb" />
     <Compile Include="Classes\Enumerations.vb" />
-    <Compile Include="Controls\ctrl_rptPhoto.aspx.designer.vb">
-      <DependentUpon>ctrl_rptPhoto.aspx</DependentUpon>
+    <Compile Include="Controls\ctrl_rptPhoto.ascx.designer.vb">
+      <DependentUpon>ctrl_rptPhoto.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ctrl_rptPhoto.aspx.vb">
-      <DependentUpon>ctrl_rptPhoto.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+    <Compile Include="Controls\ctrl_rptPhoto.ascx.vb">
+      <DependentUpon>ctrl_rptPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\MiscFunctions.vb" />
     <Compile Include="Classes\Objects.vb" />
@@ -446,7 +482,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63495</DevelopmentServerPort>
+          <DevelopmentServerPort>64579</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -28,9 +28,6 @@ Public Class Proposal_WhereNow
 #End Region
 
 
-
-
-
 #Region "Functions"
     Private Function WhatIsHappening(ByVal lCheatCode As Boolean)
         Dim proc As New SqlClient.SqlCommand("[Proposal].[usp_Get_WhereAreWeNow] ", (New Connection).cnnSQL)

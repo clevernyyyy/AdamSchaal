@@ -45,9 +45,9 @@
                     </p>
                     
             
-                    <img class="img img-circle" style="float:right;" src="/img/Col_Adam/Face.jpg" height="60px" width="60px" alt="">
+                    <img class="img img-circle" style="float:right;" src="/Photos/Col_Adam/Face.jpg" height="60px" width="60px" alt="">
                     <span class="/Styles/icon icon-plus" style="float:right; margin-top:20px; margin-left:10px; margin-right:10px;"></span>
-                    <img class="img img-circle" style="float:right" src="/img/Col_Adam/CollFace2.jpg" height="60px" width="60px" alt="">
+                    <img class="img img-circle" style="float:right" src="/Photos/Col_Adam/CollFace2.jpg" height="60px" width="60px" alt="">
                    </div>
                 
             </div>
@@ -59,7 +59,7 @@
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_Where.aspx" type="radio" class="list-group-item">Where did it happen?</a>
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_PicVideos.aspx" type="radio" class="list-group-item">Pictures and Video</a> 
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Timeline.aspx" type="radio" class="list-group-item">Proposal Timeline</a>
+                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Timeline.aspx" type="radio" class="list-group-item">Planning Timeline</a>
                 </div>
             </div>
             <!--/span-->
@@ -119,7 +119,7 @@
                     <!--/span-->
                     <div class="col-6 col-sm-6 col-lg-4">
                         <h2>
-                            Proposal Timeline</h2>
+                            Planning Timeline</h2>
                         <p>
                             Secretly my favorite part of the site.
                         </p>
