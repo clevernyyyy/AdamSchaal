@@ -16,7 +16,7 @@
                 </p>
                 <div class="slideUp propContent" style="min-height:900px">
                     <h1 class="centered">
-                        Proposal Story</h1>
+                        Our Story</h1>
                         <hr />
 
                         <div class="panel-group" id="accordion">
@@ -100,7 +100,7 @@
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx" type="radio" class="list-group-item">Proposal</a> 
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item active">Proposal Story</a> 
+                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item active">Our Story</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_How.aspx" type="radio" class="list-group-item">How did I think of it?</a>
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_Where.aspx" type="radio" class="list-group-item">Where did it happen?</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 

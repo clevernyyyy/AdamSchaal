@@ -51,7 +51,7 @@
 
                                 <br />
                                 <p>I tell Colleen about the trip to Boston.</p>
-                                <p>Test One</p>
+                                <%-- <p>Test One</p>
                                 <embed src="/img/Videos/IMG_2500.MOV"
                                 Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
                                 CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_One"></embed>
@@ -59,7 +59,7 @@
                                 <p>Test Two</p>
                                 <embed src="/img/Videos/IMG_2501.MOV" 
                                 Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
-                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_Two"></embed>
+                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_Two"></embed>--%>
 
                                 
                             </div>
@@ -112,7 +112,7 @@
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx" type="radio" class="list-group-item">Proposal</a> 
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item">Proposal Story</a> 
+                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item">Our Story</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_How.aspx" type="radio" class="list-group-item">How did I think of it?</a>
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_Where.aspx" type="radio" class="list-group-item">Where did it happen?</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 

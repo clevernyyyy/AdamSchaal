@@ -18,7 +18,7 @@
                     <h1 class="centered">
                         Where did it happen?</h1>
                         <hr />
-                        <h3>The Two Country, Five State Proposal, Six City Proposal...</h3>
+                        <h3>The Two Country, Five State, Six City Proposal...</h3>
                         <p>My girlfriend is so unbelieveably awesome that my proposal had to be just as spectacular.</p>
 
                         
@@ -30,7 +30,7 @@
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx" type="radio" class="list-group-item">Proposal</a> 
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item">Proposal Story</a> 
+                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio" class="list-group-item">Our Story</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_How.aspx" type="radio" class="list-group-item">How did I think of it?</a>
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_Where.aspx" type="radio" class="list-group-item active">Where did it happen?</a> 
                     <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx" type="radio" class="list-group-item">Where are we now?</a> 
