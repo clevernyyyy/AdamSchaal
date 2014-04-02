@@ -100,7 +100,9 @@
     <Content Include="bin\WebApplication1.dll" />
     <Content Include="bin\WebApplication1.pdb" />
     <Content Include="bin\WebApplication1.xml" />
+    <Content Include="Controls\ctrl_rptCheatCode.ascx" />
     <Content Include="Controls\ctrl_rptPhoto.ascx" />
+    <Content Include="Controls\ctrl_tblCheatCode.ascx" />
     <Content Include="favicon %282%29.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
@@ -266,11 +268,25 @@
   <ItemGroup>
     <Compile Include="Classes\Connection.vb" />
     <Compile Include="Classes\Enumerations.vb" />
+    <Compile Include="Controls\ctrl_rptCheatCode.ascx.designer.vb">
+      <DependentUpon>ctrl_rptCheatCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrl_rptCheatCode.ascx.vb">
+      <DependentUpon>ctrl_rptCheatCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Controls\ctrl_rptPhoto.ascx.designer.vb">
       <DependentUpon>ctrl_rptPhoto.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\ctrl_rptPhoto.ascx.vb">
       <DependentUpon>ctrl_rptPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ctrl_tblCheatCode.ascx.designer.vb">
+      <DependentUpon>ctrl_tblCheatCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrl_tblCheatCode.ascx.vb">
+      <DependentUpon>ctrl_tblCheatCode.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modules\MiscFunctions.vb" />
@@ -449,6 +465,7 @@
     <None Include="img\.DS_Store" />
     <None Include="img\portfolio\.DS_Store" />
     <None Include="img\team\.DS_Store" />
+    <None Include="My Project\PublishProfiles\AdamSchaal.com.pubxml" />
     <None Include="Styles\bootstrap-theme.css.map" />
     <None Include="Styles\bootstrap.css.map" />
     <None Include="fonts\glyphicons-halflings-regular.eot" />

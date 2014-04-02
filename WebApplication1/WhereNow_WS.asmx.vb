@@ -21,7 +21,7 @@ Public Class WhereNow_WS
             Dim pkg As Package = GetPackage()
             Dim dt As New DataTable
             Dim str As String
-            dt = GetNowFromSQL()
+            dt = GetWhereFromSQL(False)
 
             For Each dr As DataRow In dt.Rows
                 RowToObject(pkg.WhereNow, dr)
@@ -40,6 +40,20 @@ Public Class WhereNow_WS
     <WebMethod(True)> _
     Public Function GetAll() As String
         Try
+            Dim pkg As Package = GetPackage()
+            Dim currRecord As New WhereNow
+            Dim dt As New DataTable
+            Dim str As String
+            dt = GetWhereFromSQL(True)
+
+            For Each dr As DataRow In dt.Rows
+                RowToObject(currRecord, dr)
+            Next
+
+
+
+
+
             Return "Hello World - All"
         Catch ex As Exception
             Throw New Exception
@@ -48,13 +62,13 @@ Public Class WhereNow_WS
 
 
 
-    Public Function GetNowFromSQL() As DataTable
+    Public Function GetWhereFromSQL(ByVal lCheatCode As Boolean) As DataTable
         Dim dt As New DataTable
         Dim dDate As Date = Date.Now
         Dim proc As New SqlClient.SqlCommand("[Proposal].[usp_Get_WhereAreWeNow]", (New Connection).cnnSQL)
 
         proc.Parameters.AddWithValue("@dDate", dDate)
-        proc.Parameters.AddWithValue("@lCheatCode", False)
+        proc.Parameters.AddWithValue("@lCheatCode", lCheatCode)
 
         dt = FillDataTable(proc, "dt")
 

@@ -50,6 +50,15 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblAll As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''uctrlTest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlTest As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
     '''rptDayOne control.
     '''</summary>
     '''<remarks>

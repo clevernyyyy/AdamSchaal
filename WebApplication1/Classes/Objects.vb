@@ -2,6 +2,7 @@
 <Serializable()> _
 Public Class Package
     Public WhereNow As New WhereNow
+    Public WhereAll As New WhereAll    'Maybe make as a collection of WhereNow?
 End Class
 #End Region
 
@@ -28,6 +29,16 @@ End Class
 #Region "WhereNow"
 <Serializable()> _
 Public Class WhereNow
+    Public Property nID As Integer
+    Public Property cContent As String
+    Public Property dInception As Date
+    Public Property dExpiration As Date
+    Public Property cLocation As String
+    Public Property cImage As String
+End Class
+
+<Serializable()> _
+Public Class WhereAll
     Public Property nID As Integer
     Public Property cContent As String
     Public Property dInception As Date

@@ -9,25 +9,6 @@ Public Class Proposal_WhereNow
 
     End Sub
 
-
-#Region "Buttons"
-
-    'Private Sub btnGetNow_Click(sender As Object, e As System.EventArgs) Handles btnGetNow.Click
-    '    Dim dtDisplay As DataTable
-    '    dtDisplay = WhatIsHappening(False)
-
-    '    lblNow.Text = dtDisplay.Rows(0).Item("cContent")
-
-    'End Sub
-
-    'Private Sub btnGetAll_ServerClick(sender As Object, e As System.EventArgs) Handles btnGetAll.ServerClick
-    '    Dim dtDisplay As DataTable
-    '    dtDisplay = WhatIsHappening(True)
-    'End Sub
-
-#End Region
-
-
 #Region "Functions"
     Private Function WhatIsHappening(ByVal lCheatCode As Boolean)
         Dim proc As New SqlClient.SqlCommand("[Proposal].[usp_Get_WhereAreWeNow] ", (New Connection).cnnSQL)
@@ -61,6 +42,5 @@ Public Class Proposal_WhereNow
 
     End Sub
 #End Region
-
 
 End Class

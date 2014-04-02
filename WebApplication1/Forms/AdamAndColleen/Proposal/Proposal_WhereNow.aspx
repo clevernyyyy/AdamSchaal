@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master"
     CodeBehind="Proposal_WhereNow.aspx.vb" Inherits="WebApplication1.Proposal_WhereNow" %>
 
+
+<%@ Register Src="/Controls/ctrl_rptCheatCode.ascx" TagPrefix="uctrl" TagName="rptCheatCode" %>
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <br />
     <br />
@@ -44,13 +46,22 @@
                         Wanna see the whole itinerary?
                     </h3>
                     <asp:Label ID="lblAll" runat="server" Style="font-size: larger"></asp:Label>
+
+                    <%-- Testing Control --%>
+                    <div>
+                        <uctrl:rptCheatCode ID="uctrlTest" runat="server" title = "TEST" /> 
+                    </div>
+                    <div>                  
+                        <uctrl:rptCheatCode ID="uctrlTest2" runat="server" title = "TEST" />                   
+                    </div>     
+
                     <%-- <p>Where the result will go.</p>--%>
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        Day One: 05/02/2014 </a>
+                                        Day One: Thursday, May 2nd, 2014 </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse">
