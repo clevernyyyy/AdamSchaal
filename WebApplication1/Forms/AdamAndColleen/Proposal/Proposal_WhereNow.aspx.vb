@@ -5,7 +5,7 @@ Public Class Proposal_WhereNow
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         AddGetNowJavaScript(btnGetNow, lblNow)
-        AddGetAllJavaScript(btnGetAll, lblAll)
+        AddGetAllJavaScript(btnGetAll, accordion)
 
     End Sub
 
@@ -33,11 +33,11 @@ Public Class Proposal_WhereNow
         btn.Attributes.Add("onclick", strJava)
 
     End Sub
-    Public Sub AddGetAllJavaScript(ByVal btn As HtmlControl, ByVal lbl As Label)
+    Public Sub AddGetAllJavaScript(ByVal btn As HtmlControl, ByVal accord As HtmlControl)
         Dim strJava As String
 
         'Shows info from SQL if button is pressed
-        strJava = "javascript:getAll(" + lbl.ClientID + ");"
+        strJava = "javascript:getAll(" + accord.ClientID + ");"
         btn.Attributes.Add("onclick", strJava)
 
     End Sub

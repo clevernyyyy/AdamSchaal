@@ -29,7 +29,6 @@ Public Class WhereNow_WS
 
             str = New JavaScriptSerializer().Serialize(pkg.WhereNow)
 
-
             Return str
         Catch ex As Exception
             Throw New Exception
@@ -41,20 +40,22 @@ Public Class WhereNow_WS
     Public Function GetAll() As String
         Try
             Dim pkg As Package = GetPackage()
-            Dim currRecord As New WhereNow
             Dim dt As New DataTable
             Dim str As String
+            Dim list As New List(Of WhereNow)
+
             dt = GetWhereFromSQL(True)
 
             For Each dr As DataRow In dt.Rows
+                Dim currRecord As New WhereNow
                 RowToObject(currRecord, dr)
+                list.Add(currRecord)
             Next
 
+            str = New JavaScriptSerializer().Serialize(list)
+            Return str
 
-
-
-
-            Return "Hello World - All"
+            'Return "Hello World - All"
         Catch ex As Exception
             Throw New Exception
         End Try

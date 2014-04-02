@@ -4,7 +4,7 @@
 });
 
 
-function getNow( lbl) {
+function getNow(lbl) {
     // Fill stuff
     if (true)
         loadResults("GetNow", lbl);
@@ -13,16 +13,16 @@ function getNow( lbl) {
 }
 
 
-function getAll( lbl) {
+function getAll(accord) {
     // Fill stuff
     if (true)
-        loadResults("GetAll", lbl);
+        loadResults("GetAll", accord);
     else
         loadFail();
 }
 
 
-function loadResults(strType, lbl)
+function loadResults(strType, ctrl)
 {
     
     $.ajax({
@@ -31,7 +31,7 @@ function loadResults(strType, lbl)
         //data: "{str : '" + "hi" + "' }",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
-        success: fillSuccess(lbl),
+        success: fillSuccess(strType, ctrl),
         error: fillFail()
     });
 }
@@ -40,10 +40,14 @@ function loadFail() {
 
 }
 
-function fillSuccess(lbl) {
+function fillSuccess(strType, ctrl) {
     return function (jqXhr, textStatus) {
         if (textStatus == "success") {
-            fillAll(jqXhr, lbl);
+            if (strType == "GetAll") {
+                fillAllMultiple(jqXhr, ctrl);
+            }
+            else
+                fillAll(jqXhr, ctrl);
         }
     };
 }
@@ -76,5 +80,15 @@ function fillAll(results, lbl) {
     var img = obj.cImage;         
 
     lblDisplay.html(date_I.toDateString() + '  -  ' + date_E.toDateString() + '  -  ' + loc + '  <br/>  '  + cont);
+
+}
+
+function fillAllMultiple(results, accrd) {
+
+    var accord = $(accrd);
+
+    var obj = jQuery.parseJSON(results.d);
+
+
 
 }

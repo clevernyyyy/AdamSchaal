@@ -2,7 +2,7 @@
 <Serializable()> _
 Public Class Package
     Public WhereNow As New WhereNow
-    Public WhereAll As New WhereAll    'Maybe make as a collection of WhereNow?
+    Public WhereAll As New List(Of WhereNow)   'Maybe make as a collection of WhereNow?
 End Class
 #End Region
 

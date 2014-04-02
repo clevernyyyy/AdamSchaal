@@ -50,6 +50,15 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblAll As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''accordion control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents accordion As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''uctrlDayOne control.
     '''</summary>
     '''<remarks>
