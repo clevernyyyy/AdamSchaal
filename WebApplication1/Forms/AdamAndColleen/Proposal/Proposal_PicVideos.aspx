@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/Styles/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <script type="text/javascript" src="/Scripts/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
-    <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
+    <script type="text/javascript" src="/Scripts/Photos.js"></script>
     
     <br />
     <br />

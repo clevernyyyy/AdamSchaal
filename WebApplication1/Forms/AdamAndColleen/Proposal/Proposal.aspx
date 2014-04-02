@@ -23,7 +23,6 @@
     <link rel="icon" href="/favicon (2).ico" type="image/x-icon">
     <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
-    <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
     <br />
 <br />
 </asp:Content>

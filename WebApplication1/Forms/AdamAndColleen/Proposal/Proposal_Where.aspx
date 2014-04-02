@@ -4,7 +4,6 @@
     <br />
 <br />
 <br />
-    <script type="text/javascript" src="/Scripts/Proposal.js?021714"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">

@@ -209,6 +209,8 @@
     <Content Include="Scripts\jquery.fancybox.js" />
     <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\jquery.mousewheel-3.0.6.pack.js" />
+    <Content Include="Scripts\Photos.js" />
+    <Content Include="Scripts\PopOver.js" />
     <Content Include="Scripts\Proposal.js" />
     <Content Include="Scripts\WhereNow.js" />
     <Content Include="Styles\animations.css" />
