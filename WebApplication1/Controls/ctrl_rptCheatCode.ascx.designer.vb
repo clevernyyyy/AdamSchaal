@@ -14,11 +14,20 @@ Option Explicit On
 Partial Public Class ctrl_rptCheatCode
 
     '''<summary>
-    '''uctrlTableTEST control.
+    '''accordion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents uctrlTableTEST As Global.WebApplication1.ctrl_tblCheatCode
+    Protected WithEvents accordion As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
+    '''uctrlTable control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlTable As Global.WebApplication1.ctrl_tblCheatCode
 End Class

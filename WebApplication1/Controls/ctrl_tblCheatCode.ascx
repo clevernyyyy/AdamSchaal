@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ctrl_tblCheatCode.ascx.vb" Inherits="WebApplication1.ctrl_tblCheatCode" %>
 
-<div id="collapse" class="panel-collapse collapse">
+<div id="collapse" runat="server" class="panel-collapse collapse">
     <div class="panel-body">
         <table id="tblDay" class="table table-striped table-bordered table-condensed">
             <thead>

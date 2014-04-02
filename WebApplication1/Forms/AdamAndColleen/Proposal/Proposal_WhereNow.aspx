@@ -49,15 +49,22 @@
 
                     <%-- Testing Control --%>
                     <div>
-                        <uctrl:rptCheatCode ID="uctrlTest" runat="server" title = "TEST" /> 
-                    </div>
-                    <div>                  
-                        <uctrl:rptCheatCode ID="uctrlTest2" runat="server" title = "TEST" />                   
+                    <div class="panel-group" id="accordion">
+                        <uctrl:rptCheatCode ID="uctrlDayOne" runat="server" title = "Day One" /> 
+                        <uctrl:rptCheatCode ID="uctrlDayTwo" runat="server" title = "Day Two" />  
+                        <uctrl:rptCheatCode ID="uctrlDayThree" runat="server" title = "Day Three" />  
+                        <uctrl:rptCheatCode ID="uctrlDayFour" runat="server" title = "Day Four" />  
+                        <uctrl:rptCheatCode ID="uctrlDayFive" runat="server" title = "Day Five" />  
+                        <uctrl:rptCheatCode ID="uctrlDaySix" runat="server" title = "Day Six" />  
+                        <uctrl:rptCheatCode ID="uctrlDaySeven" runat="server" title = "Day Seven" />  
+                        <uctrl:rptCheatCode ID="uctrlDayEight" runat="server" title = "Day Eight" />  
+                        <uctrl:rptCheatCode ID="uctrlDayNine" runat="server" title = "Day Nine" />  
+                        <uctrl:rptCheatCode ID="uctrlDayTen" runat="server" title = "Day Ten" />   
+                        </div>                
                     </div>     
 
                     <%-- <p>Where the result will go.</p>--%>
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
+<%--                        <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
@@ -188,7 +195,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
                 </form>

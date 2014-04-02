@@ -50,38 +50,92 @@ Partial Public Class Proposal_WhereNow
     Protected WithEvents lblAll As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''uctrlTest control.
+    '''uctrlDayOne control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents uctrlTest As Global.WebApplication1.ctrl_rptCheatCode
+    Protected WithEvents uctrlDayOne As Global.WebApplication1.ctrl_rptCheatCode
 
     '''<summary>
-    '''rptDayOne control.
+    '''uctrlDayTwo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptDayOne As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents uctrlDayTwo As Global.WebApplication1.ctrl_rptCheatCode
 
     '''<summary>
-    '''rptDayTwo control.
+    '''uctrlDayThree control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptDayTwo As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents uctrlDayThree As Global.WebApplication1.ctrl_rptCheatCode
 
     '''<summary>
-    '''rptDayThree control.
+    '''uctrlDayFour control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents rptDayThree As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents uctrlDayFour As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDayFive control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDayFive As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDaySix control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDaySix As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDaySeven control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDaySeven As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDayEight control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDayEight As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDayNine control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDayNine As Global.WebApplication1.ctrl_rptCheatCode
+
+    '''<summary>
+    '''uctrlDayTen control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlDayTen As Global.WebApplication1.ctrl_rptCheatCode
 End Class
