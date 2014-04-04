@@ -108,8 +108,8 @@
 				<br>
 				<h4>
 					<b>Me</b></h4>
-				<a href="#" class="icon icon-twitter"></a>
-				<a href="#" class="icon icon-facebook"></a>
+				<a href="https://twitter.com/adamschaal" class="icon icon-twitter"></a>
+				<a href="https://www.facebook.com/adam.schaal" class="icon icon-facebook"></a>
 				<br />
 				<br />
 				
@@ -174,9 +174,9 @@
 					<br />
 					<span class="icon icon-envelop"></span><a href="#">   adamschaal1263@gmail.com</a>
 					<br />
-					<span class="icon icon-twitter"></span><a href="#">   @whatsTwitter? </a>
+					<span class="icon icon-twitter"></span><a href="https://twitter.com/adamschaal">   @adamschaal </a>
 					<br />
-					<span class="icon icon-facebook"></span><a href="#">   Adam Schaal</a>
+					<span class="icon icon-facebook"></span><a href="https://www.facebook.com/adam.schaal">   Adam Schaal</a>
 					<br />
 				</p>
 			</div>
