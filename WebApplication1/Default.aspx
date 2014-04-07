@@ -160,7 +160,7 @@
 		<div class="row">
 			<br>
 			<h1 class="centered">
-				THANKS FOR VISITING US</h1>
+				THANKS FOR VISITING</h1>
 			<hr>
 			<br>
 			<br>
@@ -168,7 +168,7 @@
 				<h3>
 					Contact Information</h3>
 				<p>
-					<span class="icon icon-home"></span>   Some Address, Omaha, NE
+					<span class="icon icon-home"></span>   Omaha, NE
 					<br />
 					<%--                    <span class="icon icon-phone"></span>
 					<br />--%>
@@ -227,7 +227,7 @@
                 </p>
 				<p>
                     Also feel free to sign up for my newsletter.  Just kidding, I don't have a 
-                    newsletter.  Actually, maybe I do.
+                    newsletter.  Actually, maybe I do - you never know.
                 </p>
 			</div>
 			<!-- col -->

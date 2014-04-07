@@ -27,3 +27,13 @@ a.HomeRun:link
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
+
+.table-smallerfont td
+{
+    font-size:0.9em;
+}
+
+.accordion-smallerfont
+{
+    font-size:0.9em;
+}

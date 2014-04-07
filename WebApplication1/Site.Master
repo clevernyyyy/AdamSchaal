@@ -53,6 +53,8 @@
                         <li><a href="#home" class="smoothScroll">Home</a></li>
                         <li><a href="#about" class="smoothScroll">About</a></li>
                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                        <li runat="server" id="mnuAdamAndColRight"><a href="/Forms/AdamAndColleen/AdamAndCol.aspx">
+                            Adam & Colleen</a></li>
                     </ul>
                     <ul runat="server" id="mnuAdamAndCol" class="nav navbar-nav">
                         <li>
@@ -72,8 +74,8 @@
                         <li><a href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">Honeymoon</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li runat="server" id="mnuAdamAndColRight"><a href="/Forms/AdamAndColleen/AdamAndCol.aspx">
-                            Adam & Colleen</a></li>
+                        <%--<li runat="server" id="mnuAdamAndColRight"><a href="/Forms/AdamAndColleen/AdamAndCol.aspx">
+                            Adam & Colleen</a></li>--%>
                         <li runat="server" id="mnuHomeRight"><a href="../../../Default.aspx">Home</a></li>
                     </ul>
                 </div>

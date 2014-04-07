@@ -1,7 +1,31 @@
 ﻿$(document).ready(function () {
 
+    document.getElementById('divOmaha2Boston').style.display = 'none';
+    document.getElementById('divRivieraMaya').style.display = 'none';
 
+    $("[id*='O2BPlus']").click(function (e) {
+        if ($("[id*='O2BPlus']").text() == "+") {
+            document.getElementById('divOmaha2Boston').style.display = 'block';
+            $("[id*='O2BPlus']").text("-");
+        }
+        else {
+            document.getElementById('divOmaha2Boston').style.display = 'none';
+            $("[id*='O2BPlus']").text("+");
+        }
+    });
+
+    $("[id*='RMPlus']").click(function (e) {
+        if ($("[id*='RMPlus']").text() == "+") {
+            document.getElementById('divRivieraMaya').style.display = 'block';
+            $("[id*='RMPlus']").text("-");
+        }
+        else {
+            document.getElementById('divRivieraMaya').style.display = 'none';
+            $("[id*='RMPlus']").text("+");
+        }
+    });
 });
+
 
 
 function getNow(lbl) {
@@ -86,9 +110,36 @@ function fillAll(results, lbl) {
 function fillAllMultiple(results, accrd) {
 
     var accord = $(accrd);
-
     var obj = jQuery.parseJSON(results.d);
 
+    $.each(obj, function (index, value) {
 
+        var ctrl = accord.find("[id*='uctrlDay'][id*='uctrlTable']").get(value.nDay - 1);
+        var tbl = $(ctrl).closest("[id*='uctrlTable']").find(".table");
 
+        var dateLong = new Date(parseInt(value.dInception.substr(6)));
+        var dateString = dateLong.toString();
+        var dateFormatted = dateString.replace("GMT-0500 (Central Standard Time)", "");
+
+        if (dateFormatted.contains("1900"))
+            dateFormatted = "Pre-May 1st, 2014";
+
+        if (dateLong.getDate() == value.nDay+1) {  
+
+            var str = "<tr>" +
+                        "<td>"
+                            + dateFormatted +
+                        "</td>" +
+                        "<td>"
+                            + value.cContent +
+                        "</td>" +
+                        "<td>"
+                            + value.cLocation +
+                        "</td>" +
+                    "</tr>";
+
+            tbl.append(str);
+
+        }
+    });
 }

@@ -25,7 +25,7 @@
 					<br />
 					<br />
 					<br />
-					<h3 class="black-shadow" style="color:White">This site is dedicated to my Girlfriend.</h3>
+					<h3 class="black-shadow" style="color:White">This site is dedicated to my girlfriend.</h3>
 			</header>
 		</div>
 		<!-- ==== GREYWRAP ==== -->

@@ -41,6 +41,15 @@
     box-shadow: 0 0 5px #0066CC;
 }
 
+.panel-heading
+{
+    background: #D1E0FF !important;
+}
+.panel-heading:hover 
+{
+    background: #99CCFF !important;
+}
+
 
 /* ==========================================================================
    Base Styles and Bootstrap Modifications

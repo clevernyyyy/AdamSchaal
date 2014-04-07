@@ -2,7 +2,7 @@
 
 <div id="collapse" runat="server" class="panel-collapse collapse">
     <div class="panel-body">
-        <table id="tblDay" class="table table-striped table-bordered table-condensed">
+        <table id="tblDay" class="table table-striped table-bordered table-condensed table-smallerfont">
             <thead>
                 <tr>
                     <th>Date

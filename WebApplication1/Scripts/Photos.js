@@ -1,5 +1,6 @@
 ﻿$(document).ready(function () {
 
 
-    $(".fancybox").fancybox();
+    $(".fancybox:visible").fancybox();
+
 });

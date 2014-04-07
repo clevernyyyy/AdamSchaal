@@ -34,15 +34,7 @@ Public Class WhereNow
     Public Property dExpiration As Date
     Public Property cLocation As String
     Public Property cImage As String
+    Public Property nDay As Integer
 End Class
 
-<Serializable()> _
-Public Class WhereAll
-    Public Property nID As Integer
-    Public Property cContent As String
-    Public Property dInception As Date
-    Public Property dExpiration As Date
-    Public Property cLocation As String
-    Public Property cImage As String
-End Class
 #End Region

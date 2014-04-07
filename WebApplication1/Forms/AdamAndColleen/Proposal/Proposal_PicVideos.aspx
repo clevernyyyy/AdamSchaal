@@ -41,13 +41,12 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="omaha">
                                 <p>Here are some pictures and videos from Omaha.</p>
-                                <hr />
-                                
+                          
                                 <!--  Omaha Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoOmaha" runat="server" tabPhoto = "Omaha/" />                   
                                 </div>
-                                <hr />
+                             
 
                                 <br />
                                 <p>I tell Colleen about the trip to Boston.</p>
@@ -65,8 +64,7 @@
                             </div>
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
-                                <hr />
-                                
+                                                
                                 <!--  Boston Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoBoston" runat="server" tabPhoto = "Boston/" />                   

@@ -6,7 +6,7 @@
     <br />
     <br />
     <br />
-    <script type="text/javascript" src="/Scripts/WhereNow.js?021714"></script>
+    <script type="text/javascript" src="/Scripts/WhereNow.js?040714"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container" runat="server">
@@ -46,20 +46,22 @@
                     <%-- Testing Control --%>
                     <div>
                         <div class="panel-group" runat="server" id="accordion">
-                            <h2>
-                                Omaha-to-Boston</h2>
-                            <uctrl:rptCheatCode ID="RptCheatCode1" runat="server" title="Day One" />
-                            <uctrl:rptCheatCode ID="RptCheatCode2" runat="server" title="Day Two" />
-                            <uctrl:rptCheatCode ID="RptCheatCode3" runat="server" title="Day Three" />
-                            <uctrl:rptCheatCode ID="RptCheatCode4" runat="server" title="Day Four" />
-                            <h2>
-                                Boston-to-Riviera Maya</h2>
-                            <uctrl:rptCheatCode ID="uctrlDayFive" runat="server" title="Day Five" />
-                            <uctrl:rptCheatCode ID="uctrlDaySix" runat="server" title="Day Six" />
-                            <uctrl:rptCheatCode ID="uctrlDaySeven" runat="server" title="Day Seven" />
-                            <uctrl:rptCheatCode ID="uctrlDayEight" runat="server" title="Day Eight" />
-                            <uctrl:rptCheatCode ID="uctrlDayNine" runat="server" title="Day Nine" />
-                            <uctrl:rptCheatCode ID="uctrlDayTen" runat="server" title="Day Ten" />
+                            <h2>Omaha and Boston  <a id="O2BPlus" class="noslide" href="#">+</a></h2>
+                            <div id="divOmaha2Boston">
+                                <uctrl:rptCheatCode ID="uctrlDayOne" runat="server" title="Day One" />
+                                <uctrl:rptCheatCode ID="uctrlDayTwo" runat="server" title="Day Two" />
+                                <uctrl:rptCheatCode ID="uctrlDayThree" runat="server" title="Day Three" />
+                                <uctrl:rptCheatCode ID="uctrlDayFour" runat="server" title="Day Four" />
+                            </div>
+                            <h2>Riviera Maya  <a id="RMPlus"  class="noslide" href="#">+</a></h2>
+                            <div id="divRivieraMaya">
+                                <uctrl:rptCheatCode ID="uctrlDayFive" runat="server" title="Day Five" />
+                                <uctrl:rptCheatCode ID="uctrlDaySix" runat="server" title="Day Six" />
+                                <uctrl:rptCheatCode ID="uctrlDaySeven" runat="server" title="Day Seven" />
+                                <uctrl:rptCheatCode ID="uctrlDayEight" runat="server" title="Day Eight" />
+                                <uctrl:rptCheatCode ID="uctrlDayNine" runat="server" title="Day Nine" />
+                                <uctrl:rptCheatCode ID="uctrlDayTen" runat="server" title="Day Ten" />
+                            </div>
                         </div>
                     </div>
                 </div>
