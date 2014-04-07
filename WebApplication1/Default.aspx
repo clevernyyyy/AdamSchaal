@@ -110,6 +110,8 @@
 					<b>Me</b></h4>
 				<a href="https://twitter.com/adamschaal" class="icon icon-twitter"></a>
 				<a href="https://www.facebook.com/adam.schaal" class="icon icon-facebook"></a>
+                <br />
+                <%--<a href="#">Resume</a>--%>
 				<br />
 				<br />
 				
@@ -172,7 +174,7 @@
 					<br />--%>
 					<span class="icon icon-phone"></span>   402.630.4979
 					<br />
-					<span class="icon icon-envelop"></span><a href="#">   adamschaal1263@gmail.com</a>
+					<span class="icon icon-envelop"></span><a href="mailto:aschaal1263@gmail.com?subject=FromAdamSchaal.com&body=Adam%20you're%20the%20best!">   adamschaal1263@gmail.com</a>
 					<br />
 					<span class="icon icon-twitter"></span><a href="https://twitter.com/adamschaal">   @adamschaal </a>
 					<br />
@@ -221,8 +223,12 @@
 					Support Me</h3>
 				<p>
 					Clearly I need support.  Here are some ways you can do it:  
-					Cheer me on, send me money, root for my causes, but most of all enjoy life.</p>
-					<p>Also feel free to sign up for my newsletter.  Just kidding, I seriously don't have a newsletter.</p>
+					Cheer me on, send me money, root for my causes, but most of all enjoy life.
+                </p>
+				<p>
+                    Also feel free to sign up for my newsletter.  Just kidding, I don't have a 
+                    newsletter.  Actually, maybe I do.
+                </p>
 			</div>
 			<!-- col -->
 		</div>

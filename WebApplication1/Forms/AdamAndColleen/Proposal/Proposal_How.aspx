@@ -2,8 +2,8 @@
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <br />
-<br />
-<br />
+    <br />
+    <br />
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div class="container">
@@ -17,8 +17,13 @@
                     <h1 class="centered">
                         How did I think of it?</h1>
                         <hr />
-                        <h3>SubHeading</h3>
-                        <p>Wording</p>
+                        <h3>The Plan</h3>
+                        <p>For the last ten years, Colleen has stood by me through thick and thin.  Even when I didn't have 
+                        the money to take her everywhere I wanted to in the world she was okay with the smaller trips that I could 
+                        afford.  I've never felt like I've fully deserved her, but I've always known she's the one.  I long dreamed 
+                        of the perfect proposal, one that would both sweep her off her feet and demonstrate the depth of my love to 
+                        her.</p>
+                        <p>My initial plan was a goofy one.</p>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">

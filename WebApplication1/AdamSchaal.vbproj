@@ -170,24 +170,14 @@
     <Content Include="img\Videos\IMG_2500.MOV" />
     <Content Include="img\Videos\IMG_2501.MOV" />
     <Content Include="Photos\Ring\IMG_0303.JPG %282%29.JPG" />
-    <Content Include="Photos\Boston\10-03-09.JPG" />
-    <Content Include="Photos\Boston\10-2-2010.JPG" />
-    <Content Include="Photos\Boston\11-08-07 7.JPG" />
+    <Content Include="Photos\Randoms\10-03-09.JPG" />
+    <Content Include="Photos\Randoms\10-2-2010.JPG" />
+    <Content Include="Photos\Randoms\11-08-07 7.JPG" />
     <Content Include="Photos\Boston\Boston.jpg" />
-    <Content Include="Photos\Boston\thumb\10-03-09.JPG" />
-    <Content Include="Photos\Boston\thumb\10-2-2010.JPG" />
-    <Content Include="Photos\Boston\thumb\11-08-07 7.JPG" />
-    <Content Include="Photos\Omaha\North-America-Political-Outline-Map.png" />
     <Content Include="Photos\Omaha\Omaha.jpg" />
-    <Content Include="Photos\Omaha\thumb\North-America-Political-Outline-Map.png" />
-    <Content Include="Photos\Omaha\thumb\TT27.png" />
-    <Content Include="Photos\Omaha\TT27.png" />
-    <Content Include="Photos\Proposal\12-27-05.jpg" />
-    <Content Include="Photos\Proposal\3-04-06 2.jpg" />
-    <Content Include="Photos\Proposal\5-24-08.jpg" />
-    <Content Include="Photos\Proposal\thumb\12-27-05.jpg" />
-    <Content Include="Photos\Proposal\thumb\3-04-06 2.jpg" />
-    <Content Include="Photos\Proposal\thumb\5-24-08.jpg" />
+    <Content Include="Photos\Randoms\12-27-05.jpg" />
+    <Content Include="Photos\Randoms\3-04-06 2.jpg" />
+    <Content Include="Photos\Randoms\5-24-08.jpg" />
     <Content Include="Photos\Randoms\CollFace.png" />
     <Content Include="Photos\Randoms\CollFace2.jpg" />
     <Content Include="Photos\Randoms\Col_Adam.JPG" />
@@ -196,13 +186,10 @@
     <Content Include="Photos\Randoms\thumb\CollFace2.jpg" />
     <Content Include="Photos\Randoms\thumb\Col_Adam.JPG" />
     <Content Include="Photos\Randoms\thumb\Face.jpg" />
-    <Content Include="Photos\RivieraMaya\IMG_0520.JPG" />
-    <Content Include="Photos\RivieraMaya\IMG_8804.JPG" />
+    <Content Include="Photos\Randoms\IMG_0520.JPG" />
+    <Content Include="Photos\Randoms\IMG_8804.JPG" />
     <Content Include="Photos\RivieraMaya\RivieraMaya.jpeg" />
-    <Content Include="Photos\RivieraMaya\scan0001.jpg" />
-    <Content Include="Photos\RivieraMaya\thumb\IMG_0520.JPG" />
-    <Content Include="Photos\RivieraMaya\thumb\IMG_8804.JPG" />
-    <Content Include="Photos\RivieraMaya\thumb\scan0001.jpg" />
+    <Content Include="Photos\Randoms\scan0001.jpg" />
     <Content Include="Scripts\jquery-1.10.1.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\jquery.fancybox-buttons.js" />
@@ -489,6 +476,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Photos\Boston\thumb\" />
+    <Folder Include="Photos\Omaha\thumb\" />
+    <Folder Include="Photos\Proposal\thumb\" />
+    <Folder Include="Photos\RivieraMaya\thumb\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

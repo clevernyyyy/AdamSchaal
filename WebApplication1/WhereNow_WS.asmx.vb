@@ -54,8 +54,6 @@ Public Class WhereNow_WS
 
             str = New JavaScriptSerializer().Serialize(list)
             Return str
-
-            'Return "Hello World - All"
         Catch ex As Exception
             Throw New Exception
         End Try
