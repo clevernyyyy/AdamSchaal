@@ -41,7 +41,6 @@
 					<br />
 					<br />
 					<br />
-					<%--<h3 style="color:White">This site is dedicated to my Girlfriend.</h3>--%>
 			</header>
 		</div>
 <%--		<!-- ==== GREYWRAP ==== -->
@@ -83,10 +82,10 @@
 		<!-- ==== ABOUT ==== -->
 	<div class="container" id="about" name="about">
 		<div class="row white">
-			<br>
+			<br />
 			<h1 class="centered">
 				A LITTLE ABOUT ME</h1>
-			<hr>
+			<hr />
 			<div class="col-lg-5">
 				<h4 class="centered">Personal Information</h4>
 				<hr />
@@ -105,13 +104,14 @@
 			<div class="col-lg-2 centered">
 				<img class="img img-circle" src="/Photos/Col_Adam/Face.jpg" height="130px" width="120px"
 					alt="">
-				<br>
+				<%--<br />--%>
 				<h4>
 					<b>Me</b></h4>
+                <a style="font-size:1.5em" href="#">Resume</a>
+				<br />
 				<a href="https://twitter.com/adamschaal" class="icon icon-twitter"></a>
 				<a href="https://www.facebook.com/adam.schaal" class="icon icon-facebook"></a>
                 <br />
-                <%--<a href="#">Resume</a>--%>
 				<br />
 				<br />
 				
@@ -154,16 +154,16 @@
 		<!-- row -->
 	</div>
 	
-			<br>
-			<br>
+			<br />
+			<br />
 		<div class="container" id="contact" name="contact">
 		<div class="row">
-			<br>
+			<br />
 			<h1 class="centered">
 				THANKS FOR VISITING</h1>
-			<hr>
-			<br>
-			<br>
+			<hr />
+			<br />
+			<br />
 			<div class="col-lg-4">
 				<h3>
 					Contact Information</h3>
