@@ -3,9 +3,9 @@
 <%@ Register Src="/Controls/ctrl_tblCheatCode.ascx" TagPrefix="uctrl" TagName="tblCheatCode" %>
 
 <div class="panel panel-default">
-    <div class="panel-heading">
+    <div id="panel" class="panel-heading" runat="server" data-toggle="collapse" data-parent="#accordion" href="#collapse">
         <h4 class="panel-title">
-            <a class="accordion-toggle" id="accordion" runat="server" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+            <a id="accordion" class="accordion-toggle" >
                 
             </a>
         </h4>

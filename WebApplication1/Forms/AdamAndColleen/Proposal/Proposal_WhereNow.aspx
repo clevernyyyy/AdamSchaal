@@ -44,7 +44,7 @@
                     </h3>
                     <asp:Label ID="lblAll" runat="server" Style="font-size: larger"></asp:Label>
                     <%-- Testing Control --%>
-                    <div>
+                    <div id="divCheater" runat="server">
                         <div class="panel-group" runat="server" id="accordion">
                             <h2>Omaha and Boston  <a id="O2BPlus" class="noslide" href="#">+</a></h2>
                             <div id="divOmaha2Boston">

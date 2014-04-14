@@ -1,7 +1,6 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="AdamAndCol.aspx.vb"
     Inherits="WebApplication1.LandingPage" %>
 
-
 <%--<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">--%>
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
@@ -29,7 +28,6 @@
             </header>
         </div>
         <!-- ==== GREYWRAP ==== -->
-
         <div id="greywrap">
             <br />
             <br />
@@ -39,7 +37,8 @@
                     <h2>
                         <a style="color: Gray" href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">Proposal</a></h2>
                     <p>
-                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">here</a> to see more about my proposal.
+                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Proposal/Proposal.aspx">here</a>
+                        to see more about my proposal.
                     </p>
                 </div>
                 <!-- col-lg-4 -->
@@ -48,7 +47,8 @@
                     <h2>
                         <a style="color: Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">Wedding</a></h2>
                     <p>
-                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">here</a> to learn more about our wedding.
+                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">here</a>
+                        to learn more about our wedding.
                     </p>
                 </div>
                 <!-- col-lg-4 -->
@@ -57,24 +57,50 @@
                     <h2>
                         <a style="color: Gray" href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">Honeymoon</a></h2>
                     <p>
-                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">here</a> to check out details about our awesome honeymoon.
+                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Honeymoon/Honeymoon.aspx">here</a>
+                        to check out details about our awesome honeymoon.
                     </p>
                 </div>
                 <!-- col-lg-4 -->
             </div>
             <!-- row -->
         </div>
-        <div class="row centered">
+        <div class="container" id="specialThanks" name="specialThanks">
+            <div class="row">
+                <br />
+                <h1 class="centered">
+                    SPECIAL THANKS TO</h1>
+                <hr />
+                <!-- col -->
+                <div class="col-lg-12 centered">
+<%--                    <h3>
+                        Newsletter</h3>--%>
+                        <h3>Lauren</h3>
+                        For all your Boston knowledge and help.
+                        <h3>Mom</h3>
+                        For all your help in planning.
+                        <h3>Susan</h3>
+                        For helping me secretly arrange Colleen's time off.
+                        <h3>Andrea</h3>
+                        For your advice of things to do in Boston.
+                        <h3>My Coworkers</h3>
+                        Whose interest and advice helped me complete this site. 
+                </div>
+                <!-- col -->
+            </div>
+            <!-- row -->
+        </div>
+                        <br />
+        <%--        <div class="row centered">
             <button id="btnSpecialThanks" type="button" class="btn btn-default" data-container="body" data-toggle="popover"
                 data-placement="top" data-title="Special Thanks">
                 Special Thanks</button>
-        </div>
+        </div>--%>
         <div id="footerwrap">
             <div class="container">
-                <h4>Created by <a href="#about">Adam T Schaal</a></h4>
+                <h4>
+                    Created by <a href="../../../Default.aspx">Adam T Schaal</a></h4>
             </div>
         </div>
     </body>
 </asp:Content>
-
-

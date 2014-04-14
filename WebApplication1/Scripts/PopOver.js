@@ -7,7 +7,7 @@ $(document).ready(function () {
         "<li>To Mom - for all your help in planning.</li>" +
         "<li>To Susan - for helping me secretly arrange Colleen's time off.</li>" +
         "<li>To Andrea - for your advice of things to do in Boston.</li>" +
-        "<li>To My Coworkers - who's interest and advice helped me complete this site. </li> </ul>",
+        "<li>To My Coworkers - whose interest and advice helped me complete this site. </li> </ul>",
         html: true
     });
 

@@ -22,9 +22,9 @@
                         <hr />
                         <div class="panel-group" id="accordion">
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a class="accordion-toggle">
                                   February
                                 </a>
                               </h4>
@@ -61,9 +61,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <a class="accordion-toggle">
                                   March
                                 </a>
                               </h4>
@@ -100,9 +100,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <a class="accordion-toggle">
                                   April
                                 </a>
                               </h4>

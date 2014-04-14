@@ -107,7 +107,7 @@
 				<%--<br />--%>
 				<h4>
 					<b>Me</b></h4>
-                <a style="font-size:1.5em" href="#">Resume</a>
+                <a style="font-size:1.2em" href="#">Resumé</a>
 				<br />
 				<a href="https://twitter.com/adamschaal" class="icon icon-twitter"></a>
 				<a href="https://www.facebook.com/adam.schaal" class="icon icon-facebook"></a>

@@ -38,6 +38,8 @@ function getNow(lbl) {
 
 
 function getAll(accord) {
+    document.getElementById('MainContent_divCheater').style.display = 'block';
+
     // Fill stuff
     if (true)
         loadResults("GetAll", accord);
@@ -120,23 +122,27 @@ function fillAllMultiple(results, accrd) {
         var dateLong = new Date(parseInt(value.dInception.substr(6)));
         var dateString = dateLong.toString();
         var dateFormatted = dateString.replace("GMT-0500 (Central Standard Time)", "");
+        dateFormatted = dateFormatted.replace("GMT-0500 (Central Daylight Time)", "");
 
-        if (dateFormatted.contains("1900"))
+
+        if (dateFormatted.indexOf("1900") > -1)
             dateFormatted = "Pre-May 1st, 2014";
 
-        if (dateLong.getDate() == value.nDay+1) {  
+        if (dateLong.getDate() == value.nDay+1) {
 
-            var str = "<tr>" +
-                        "<td>"
-                            + dateFormatted +
-                        "</td>" +
-                        "<td>"
-                            + value.cContent +
-                        "</td>" +
-                        "<td>"
-                            + value.cLocation +
-                        "</td>" +
-                    "</tr>";
+            var str = "<tbody>" +
+                        "<tr>" +
+                            "<td>"
+                                + dateFormatted +
+                            "</td>" +
+                            "<td>"
+                                + value.cContent +
+                            "</td>" +
+                            "<td>"
+                                + value.cLocation +
+                            "</td>" +
+                        "</tr>" +
+                      "</tbody>";
 
             tbl.append(str);
 

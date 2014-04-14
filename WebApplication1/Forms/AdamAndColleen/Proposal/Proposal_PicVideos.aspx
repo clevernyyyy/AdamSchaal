@@ -64,48 +64,36 @@
                             </div>
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
-                                                
                                 <!--  Boston Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoBoston" runat="server" tabPhoto = "Boston/" />                   
                                 </div>
-
                             </div>
                             <div class="tab-pane" id="proposal">
                                 <p>Would you like to see the proposal take place?</p>
-                                
                                 <!--  Proposal Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoProposal" runat="server" tabPhoto = "Proposal/" />                   
                                 </div>
-
                                 <br />
                                 <p>I tell Colleen that Boston isn't our final destination.</p>
                             </div>
                             <div class="tab-pane" id="rivieraMaya">
                                 <p>Pictures from our time in Riviera Maya.</p>
-
                                 <!--  Riviera Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoRivieraMaya" runat="server" tabPhoto = "RivieraMaya/" />                   
                                 </div>
-
                             </div>
                             <div class="tab-pane" id="randoms">
-                                <p>Some Random pictures from our trip!  Airlines, Other cities, etc...</p>
-                                
+                                <p>Some random pictures from our trip!  Airlines, other cities, etc...</p>
                                 <!--  Randoms Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoRandoms" runat="server" tabPhoto = "Randoms/" />                   
                                 </div>
-
                             </div>
                         </div>
-
-        
                 </div>
-
-
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
                 <div class="list-group">

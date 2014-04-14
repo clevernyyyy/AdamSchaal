@@ -7,6 +7,8 @@ Public Class Proposal_WhereNow
         AddGetNowJavaScript(btnGetNow, lblNow)
         AddGetAllJavaScript(btnGetAll, accordion)
 
+        'Init hide display
+        SetDisplay("none", divCheater)
     End Sub
 
 #Region "Functions"

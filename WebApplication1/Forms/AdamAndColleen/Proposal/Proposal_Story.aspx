@@ -21,9 +21,9 @@
 
                         <div class="panel-group" id="accordion">
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a class="accordion-toggle">
                                   Boy Meets Girl
                                 </a>
                               </h4>
@@ -36,9 +36,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <a class="accordion-toggle">
                                   First Date
                                 </a>
                               </h4>
@@ -53,9 +53,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <a class="accordion-toggle">
                                   College
                                 </a>
                               </h4>
@@ -67,9 +67,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                <a class="accordion-toggle">
                                   Post-College
                                 </a>
                               </h4>
@@ -81,9 +81,9 @@
                             </div>
                           </div>
                           <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
                               <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                <a class="accordion-toggle">
                                   Today
                                 </a>
                               </h4>
