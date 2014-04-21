@@ -11,6 +11,8 @@
                     </th>
                     <th>Location
                     </th>
+                    <th>Image
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -25,6 +27,9 @@
                             </td>
                             <td>
                                 <asp:Label ID="lblLocation" runat="server"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Label ID="lblImage" runat="server"></asp:Label>
                             </td>
                         </tr>
                     </ItemTemplate>

@@ -5,8 +5,7 @@
 <div class="panel panel-default">
     <div id="panel" class="panel-heading" runat="server" data-toggle="collapse" data-parent="#accordion" href="#collapse">
         <h4 class="panel-title">
-            <a id="accordion" class="accordion-toggle" >
-                
+            <a id="accordion" runat="server" class="accordion-toggle" >
             </a>
         </h4>
     </div>

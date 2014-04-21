@@ -23,6 +23,15 @@ Partial Public Class ctrl_rptCheatCode
     Protected WithEvents panel As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
+    '''accordion  control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents accordion As Global.System.Web.UI.HtmlControls.HtmlAnchor
+
+    '''<summary>
     '''uctrlTable control.
     '''</summary>
     '''<remarks>

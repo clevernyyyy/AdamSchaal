@@ -77,13 +77,13 @@
                         Newsletter</h3>--%>
                         <h3>Lauren</h3>
                         For all your Boston knowledge and help.
-                        <h3>Mom</h3>
+                        <h3>Mom and Dad</h3>
                         For all your help in planning.
                         <h3>Susan</h3>
                         For helping me secretly arrange Colleen's time off.
                         <h3>Andrea</h3>
                         For your advice of things to do in Boston.
-                        <h3>My Coworkers</h3>
+                        <h3>My Coworkers - TI, LE, RT (you guys rock)</h3>
                         Whose interest and advice helped me complete this site. 
                 </div>
                 <!-- col -->

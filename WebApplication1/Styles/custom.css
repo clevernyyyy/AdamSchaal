@@ -40,5 +40,6 @@ a.HomeRun:link
 
 .panel-heading {
     cursor: pointer;
+    padding: 6px 15px !important;
 }
 

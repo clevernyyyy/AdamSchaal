@@ -104,7 +104,6 @@
     <Content Include="Controls\ctrl_rptPhoto.ascx" />
     <Content Include="Controls\ctrl_tblCheatCode.ascx" />
     <Content Include="favicon %282%29.ico" />
-    <Content Include="favicon.ico" />
     <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
     <Content Include="Forms\Standard\UnderConstruction.aspx" />
     <Content Include="Forms\AdamAndColleen\Honeymoon\Honeymoon.aspx" />

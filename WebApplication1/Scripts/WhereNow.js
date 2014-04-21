@@ -24,6 +24,8 @@
             $("[id*='RMPlus']").text("+");
         }
     });
+
+    $(".fancybox:visible").fancybox();
 });
 
 
@@ -140,6 +142,11 @@ function fillAllMultiple(results, accrd) {
                             "</td>" +
                             "<td>"
                                 + value.cLocation +
+                            "</td>" +
+                            "<td>"
+                                +
+                                "<a class='fancybox' href='" + value.cImage + "'><img class='img img-rounded' src='" + value.cImage + "' height='130px' width='120px' alt=''></a>"
+                                +                                
                             "</td>" +
                         "</tr>" +
                       "</tbody>";
