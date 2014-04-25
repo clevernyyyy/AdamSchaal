@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.Drawing.Imaging
+Imports System.Drawing
 
 Public Class ctrl_rptPhoto
     Inherits System.Web.UI.UserControl
@@ -43,6 +44,8 @@ Public Class ctrl_rptPhoto
             For Each fiPhoto As FileInfo In diPhotos.GetFiles
                 If Array.IndexOf(New String() {".jpg", ".png", ".jpeg", ".JPG", ".PNG", ".JPEG"}, fiPhoto.Extension) <> -1 Then
 
+                    TestRotate(fiPhoto.FullName)
+
                     'Fill data
                     Dim dr As DataRow = dtPics.NewRow
                     dr.Item("cFileName") = fiPhoto.Name
@@ -85,17 +88,22 @@ Public Class ctrl_rptPhoto
             imageFile = System.Drawing.Image.FromStream(outputFstream)
             ImageAbortCallBack = New System.Drawing.Image.GetThumbnailImageAbort(AddressOf ImageAbortDummyCallback)
 
-            For Each p In imageFile.PropertyItems
-                If p.Id = &H112 Then
-                    If p.Value(0) <> 1 Then
-                        outputFstream.Close()
-                        RotateImage(inSourceFile, EncoderValue.TransformRotate90)
-                        nEncoder = EncoderValue.TransformRotate90
+            'Maybe?
+            'TestRotate(inSourceFile)
 
-                        Return CreateThumbnail(inSourceFile, inDestinationFile, ThumbWidth, ThumbHeight, nEncoder)
-                    End If
-                End If
-            Next
+
+
+            'For Each p In imageFile.PropertyItems
+            '    If (p.Id = &H112 Or p.Id = 274) Then
+            '        If p.Value(0) <> 1 Then
+            '            outputFstream.Close()
+            '            RotateImage(inSourceFile, EncoderValue.TransformRotate90)
+            '            nEncoder = EncoderValue.TransformRotate90
+
+            '            Return CreateThumbnail(inSourceFile, inDestinationFile, ThumbWidth, ThumbHeight, nEncoder)
+            '        End If
+            '    End If
+            'Next
 
             'Dim Enc = System.Drawing.Imaging.Encoder.Transformation
             'Dim EncParm As EncoderParameter = New EncoderParameter(Enc, CLng(0))
@@ -120,22 +128,26 @@ Public Class ctrl_rptPhoto
                 ThumbHeight = imageFile.Height / (imageFile.Width / ThumbWidth)
             End If
 
-            If nEncoder <> 0 AndAlso nEncoder <> EncoderValue.TransformRotate180 Then
-                imageFile = imageFile.GetThumbnailImage(ThumbHeight, ThumbWidth, ImageAbortCallBack, IntPtr.Zero)
-            Else
-                imageFile = imageFile.GetThumbnailImage(ThumbWidth, ThumbHeight, ImageAbortCallBack, IntPtr.Zero)
-            End If
+            'If nEncoder <> 0 AndAlso nEncoder <> EncoderValue.TransformRotate180 Then
+            '    imageFile = imageFile.GetThumbnailImage(ThumbHeight, ThumbWidth, ImageAbortCallBack, IntPtr.Zero)
+            'Else
+            '    imageFile = imageFile.GetThumbnailImage(ThumbWidth, ThumbHeight, ImageAbortCallBack, IntPtr.Zero)
+            'End If
+
+            imageFile = imageFile.GetThumbnailImage(ThumbWidth, ThumbHeight, ImageAbortCallBack, IntPtr.Zero)
+
 
             'IntPtr = A platform-specific type that is used to represent a pointer or a handle.
             imageFile.Save(inDestinationFile, System.Drawing.Imaging.ImageFormat.Jpeg) 'CodecInfo, EncParms)
+
             outputFstream.Close()
             outputFstream = Nothing
             imageFile = Nothing
 
-            Select Case nEncoder
-                Case EncoderValue.TransformRotate90
-                    RotateImage(inDestinationFile, EncoderValue.TransformRotate90)
-            End Select
+            'Select Case nEncoder
+            '    Case EncoderValue.TransformRotate90
+            '        RotateImage(inDestinationFile, EncoderValue.TransformRotate90)
+            'End Select
         Catch ex As Exception
             Return False
         End Try
@@ -158,67 +170,131 @@ Public Class ctrl_rptPhoto
         End Select
     End Sub
 
-    Private Sub RotateImage(filename As String, encoderValue As EncoderValue)
-        Dim image As System.Drawing.Image
-        Dim PropertyItems As PropertyItem()
-        Dim filenameTemp As String
-        Dim Enc = System.Drawing.Imaging.Encoder.Transformation
-        Dim EncParms As New EncoderParameters(1)
-        Dim EncParm As EncoderParameter
-        Dim CodecInfo As ImageCodecInfo = GetEncoderInfo("image/jpeg")
 
-        ' Load the image to rotate.
-        image = System.Drawing.Image.FromFile(filename)
-
-        ' We're correcting the orientation, so set it to 1.
-        PropertyItems = image.PropertyItems
-        PropertyItems(0).Id = &H112
-        ' 0x0112 as specified in EXIF standard
-        PropertyItems(0).Type = 3
-        PropertyItems(0).Len = 2
-        Dim orientation As Byte() = New [Byte](1) {}
-        orientation(0) = 1
-        ' little Endian
-        orientation(1) = 0
-        PropertyItems(0).Value = orientation
-        image.SetPropertyItem(PropertyItems(0))
-
-        ' We cannot store into the same image, so use a temporary image instead.
-        filenameTemp = filename & ".temp"
-
-        ' For lossless rewriting, we must rotate the image by 90 degree increments.
-        EncParm = New EncoderParameter(Enc, CLng(encoderValue))
-        EncParms.Param(0) = EncParm
-
-        ' Now write the rotated image with Orientation metadata set to 1.
-        image.Save(filenameTemp, CodecInfo, EncParms)
-
-        ' Release memory now, since we could be doing a bunch of these.
-        image.Dispose()
-        image = Nothing
-        GC.Collect()
-
-        ' Delete the original file, which will be replaced below.
-        System.IO.File.Delete(filename)
-
-        ' Replace the original file with the rotated file.
-        File.Move(filenameTemp, filename)
-
-        ' Delete the temporary image.
-        System.IO.File.Delete(filenameTemp)
-    End Sub
-
-    Private Shared Function GetEncoderInfo(mimeType As [String]) As ImageCodecInfo
-        Dim j As Integer
-        Dim encoders As ImageCodecInfo()
-        encoders = ImageCodecInfo.GetImageEncoders()
-        For j = 0 To encoders.Length - 1
-            If encoders(j).MimeType = mimeType Then
-                Return encoders(j)
+    Public Function TestRotate(sImageFilePath As String) As Boolean
+        Dim rft As RotateFlipType = RotateFlipType.RotateNoneFlipNone
+        Dim img As System.Drawing.Image
+        'Dim img As Bitmap = Image.FromFile(sImageFilePath)
+        img = System.Drawing.Image.FromFile(sImageFilePath)
+        Dim properties As PropertyItem() = img.PropertyItems
+        Dim bReturn As Boolean = False
+        For Each p As PropertyItem In properties
+            If p.Id = 274 Then
+                Dim orientation As Short = BitConverter.ToInt16(p.Value, 0)
+                Select Case orientation
+                    Case 1
+                        rft = RotateFlipType.RotateNoneFlipNone
+                    Case 3
+                        rft = RotateFlipType.Rotate180FlipNone
+                    Case 6
+                        rft = RotateFlipType.Rotate90FlipNone
+                    Case 8
+                        rft = RotateFlipType.Rotate270FlipNone
+                End Select
             End If
         Next
-        Return Nothing
+        If rft <> RotateFlipType.RotateNoneFlipNone Then
+            img.RotateFlip(rft)
+
+            ' We cannot store into the same image, so use a temporary image instead.
+            Dim filenameTemp = sImageFilePath & ".temp"
+
+            Using memory As New MemoryStream()
+                Using fs As New FileStream(filenameTemp, FileMode.Create, FileAccess.ReadWrite)
+                    img.Save(memory, ImageFormat.Jpeg)
+                    Dim bytes As Byte() = memory.ToArray()
+                    fs.Write(bytes, 0, bytes.Length)
+                End Using
+            End Using
+
+            'img.Save(filenameTemp, System.Drawing.Imaging.ImageFormat.Jpeg)
+
+
+            ' Release memory now, since we could be doing a bunch of these.
+            img.Dispose()
+            img = Nothing
+            GC.Collect()
+
+            ' Delete the original file, which will be replaced below.
+            System.IO.File.Delete(sImageFilePath)
+
+            ' Replace the original file with the rotated file.
+            File.Move(filenameTemp, sImageFilePath)
+
+            ' Delete the temporary image.
+            System.IO.File.Delete(filenameTemp)
+
+
+
+            'System.IO.File.Delete(sImageFilePath)
+            'img.Save(sImageFilePath, System.Drawing.Imaging.ImageFormat.Jpeg)
+            bReturn = True
+        End If
+        Return bReturn
+
     End Function
+
+    'Private Sub RotateImage(filename As String, encoderValue As EncoderValue)
+    '    Dim image As System.Drawing.Image
+    '    Dim PropertyItems As PropertyItem()
+    '    Dim filenameTemp As String
+    '    Dim Enc = System.Drawing.Imaging.Encoder.Transformation
+    '    Dim EncParms As New EncoderParameters(1)
+    '    Dim EncParm As EncoderParameter
+    '    Dim CodecInfo As ImageCodecInfo = GetEncoderInfo("image/jpeg")
+
+    '    ' Load the image to rotate.
+    '    image = System.Drawing.Image.FromFile(filename)
+
+    '    ' We're correcting the orientation, so set it to 1.
+    '    PropertyItems = image.PropertyItems
+    '    PropertyItems(0).Id = &H112
+    '    ' 0x0112 as specified in EXIF standard
+    '    PropertyItems(0).Type = 3
+    '    PropertyItems(0).Len = 2
+    '    Dim orientation As Byte() = New [Byte](1) {}
+    '    orientation(0) = 1
+    '    ' little Endian
+    '    orientation(1) = 0
+    '    PropertyItems(0).Value = orientation
+    '    image.SetPropertyItem(PropertyItems(0))
+
+    '    ' We cannot store into the same image, so use a temporary image instead.
+    '    filenameTemp = filename & ".temp"
+
+    '    ' For lossless rewriting, we must rotate the image by 90 degree increments.
+    '    EncParm = New EncoderParameter(Enc, CLng(encoderValue))
+    '    EncParms.Param(0) = EncParm
+
+    '    ' Now write the rotated image with Orientation metadata set to 1.
+    '    image.Save(filenameTemp, CodecInfo, EncParms)
+
+    '    ' Release memory now, since we could be doing a bunch of these.
+    '    image.Dispose()
+    '    image = Nothing
+    '    GC.Collect()
+
+    '    ' Delete the original file, which will be replaced below.
+    '    System.IO.File.Delete(filename)
+
+    '    ' Replace the original file with the rotated file.
+    '    File.Move(filenameTemp, filename)
+
+    '    ' Delete the temporary image.
+    '    System.IO.File.Delete(filenameTemp)
+    'End Sub
+
+    'Private Shared Function GetEncoderInfo(mimeType As [String]) As ImageCodecInfo
+    '    Dim j As Integer
+    '    Dim encoders As ImageCodecInfo()
+    '    encoders = ImageCodecInfo.GetImageEncoders()
+    '    For j = 0 To encoders.Length - 1
+    '        If encoders(j).MimeType = mimeType Then
+    '            Return encoders(j)
+    '        End If
+    '    Next
+    '    Return Nothing
+    'End Function
 
 
 End Class
