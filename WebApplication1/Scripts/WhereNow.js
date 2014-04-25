@@ -126,11 +126,15 @@ function fillAllMultiple(results, accrd) {
         var dateFormatted = dateString.replace("GMT-0500 (Central Standard Time)", "");
         dateFormatted = dateFormatted.replace("GMT-0500 (Central Daylight Time)", "");
 
-
         if (dateFormatted.indexOf("1900") > -1)
             dateFormatted = "Pre-May 1st, 2014";
 
-        if (dateLong.getDate() == value.nDay+1) {
+        var image = "";
+        if (value.cImage != "") {
+            image = "<a class='fancybox' style='display:inline-block;' href='" + value.cImage + "'><img class='img img-rounded whereImage' src='" + value.cImage + "' alt=''></a>";
+        }
+
+        if (dateLong.getDate() == value.nDay + 1) {
 
             var str = "<tbody>" +
                         "<tr>" +
@@ -143,10 +147,8 @@ function fillAllMultiple(results, accrd) {
                             "<td>"
                                 + value.cLocation +
                             "</td>" +
-                            "<td>"
-                                +
-                                "<a class='fancybox' href='" + value.cImage + "'><img class='img img-rounded' src='" + value.cImage + "' height='130px' width='120px' alt=''></a>"
-                                +                                
+                            "<td style='text-align: center; vertical-align:middle;'>"
+                                + image +
                             "</td>" +
                         "</tr>" +
                       "</tbody>";

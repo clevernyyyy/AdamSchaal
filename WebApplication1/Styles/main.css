@@ -18,6 +18,14 @@
 	/*box-shadow*/
 }
 
+.whereImage
+{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+    height: 90px;
+}
 
 /*Thumb*/
 .thumb
