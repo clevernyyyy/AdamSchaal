@@ -81,10 +81,13 @@
                         For all your help in planning.
                         <h3>Susan</h3>
                         For helping me secretly arrange Colleen's time off.
+                        <h3>Nicole and her boyfriend</h3>
+                        For traveling all the way to Boston to spend time with Colleen and I.
                         <h3>Andrea</h3>
                         For your advice of things to do in Boston.
-                        <h3>My Coworkers - TI, LE, RT (you guys rock)</h3>
+                        <h3>My Coworkers - Tony, Leighton, Robert (you guys rock!)</h3>
                         Whose interest and advice helped me complete this site. 
+
                 </div>
                 <!-- col -->
             </div>

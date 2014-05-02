@@ -11,7 +11,7 @@
                     </th>
                     <th>Location
                     </th>
-                    <th>Image
+                    <th>Image <br />(click to enlarge)
                     </th>
                 </tr>
             </thead>

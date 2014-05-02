@@ -57,4 +57,13 @@ Partial Public Class Proposal_PicVideos
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents uctrlPhotoRandoms As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlVideos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlVideos As Global.WebApplication1.ctrl_rptPhoto
 End Class

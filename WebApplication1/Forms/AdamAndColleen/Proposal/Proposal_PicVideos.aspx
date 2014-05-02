@@ -35,6 +35,7 @@
                             <li><a href="#proposal" data-toggle="tab" data-parent="#accordion">Proposal</a></li>
                             <li><a href="#rivieraMaya" data-toggle="tab" data-parent="#accordion">Riviera Maya</a></li>
                             <li><a href="#randoms" data-toggle="tab" data-parent="#accordion">Randoms</a></li>
+                            <li><a href="#videos" data-toggle="tab" data-parent="#accordion">Videos</a></li>
                         </ul>
 
                         <!-- Tab panes -->
@@ -49,18 +50,7 @@
                              
 
                                 <br />
-                                <p>I tell Colleen about the trip to Boston.</p>
-                                <%-- <p>Test One</p>
-                                <embed src="/img/Videos/IMG_2500.MOV"
-                                Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
-                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_One"></embed>
-
-                                <p>Test Two</p>
-                                <embed src="/img/Videos/IMG_2501.MOV" 
-                                Pluginspage="http://www.apple.com/quicktime/" width="320" height="250" 
-                                CONTROLLER="true" LOOP="false" AUTOPLAY="false" name="Test_Two"></embed>--%>
-
-                                
+                                <%--<p>I tell Colleen about the trip to Boston.</p>--%>                                
                             </div>
                             <div class="tab-pane" id="boston">
                                 <p>We have had a heck of a time in Boston.  Here are some pictures!</p>
@@ -76,7 +66,7 @@
                                     <uctrl:rptPhoto ID="uctrlPhotoProposal" runat="server" tabPhoto = "Proposal/" />                   
                                 </div>
                                 <br />
-                                <p>I tell Colleen that Boston isn't our final destination.</p>
+                                <%--<p>I tell Colleen that Boston isn't our final destination.</p>--%>
                             </div>
                             <div class="tab-pane" id="rivieraMaya">
                                 <p>Pictures from our time in Riviera Maya.</p>
@@ -90,6 +80,13 @@
                                 <!--  Randoms Control  -->
                                 <div>
                                     <uctrl:rptPhoto ID="uctrlPhotoRandoms" runat="server" tabPhoto = "Randoms/" />                   
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="videos">
+                                <p>Here are the videos from my trip</p>
+                                <!--  Vieos Control  -->
+                                <div>
+                                    <uctrl:rptPhoto ID="uctrlVideos" runat="server" tabPhoto = "Videos/" lYouTube="true" />                   
                                 </div>
                             </div>
                         </div>
