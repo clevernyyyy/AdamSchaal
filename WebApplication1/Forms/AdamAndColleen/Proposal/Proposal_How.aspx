@@ -23,7 +23,17 @@
                         afford.  I've never felt like I've fully deserved her, but I've always known she's the one.  I long dreamed 
                         of the perfect proposal, one that would both sweep her off her feet and demonstrate the depth of my love to 
                         her.</p>
-                        <p>My initial plan was a goofy one.</p>
+                        <p>My initial plan was a goofy one.  I had planned to rent out a movie theatre and play a movie with me singing
+                        a proposal (or more likely lip-syncing).  I never really made that happen though.  Next I wrote some of your 
+                        favorite celebrities to try to get together a celebrity video to help me propose.  That also didn't pan out.
+                        </p>
+                        <p>Finally I decided that I was far more likely to do it on a trip.  Next was planning the trip.  I found a 
+                        good deal for the Hard Rock Hotel in Riviera Maya, however it only flew out of big airports.  Dallas?  Nah.  
+                        Florida?  Won't work.  Boston?  Hmmm that seems interesting.  I would like to see Lauren and I know that you 
+                        would like to see Nicole.  Let's book it I thought.  It was later that I learned that I could have flown directly 
+                        from Omaha if I wanted to, but at an extra fee.  But I was already happy with the Boston plans.  So in late 
+                        January/early February I set my plans into motion.                             
+                        </p>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">

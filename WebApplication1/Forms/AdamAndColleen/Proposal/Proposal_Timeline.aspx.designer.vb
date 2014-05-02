@@ -39,4 +39,13 @@ Partial Public Class ProposalStory_Timeline
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rptApril As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''rptMay control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rptMay As Global.System.Web.UI.WebControls.Repeater
 End Class

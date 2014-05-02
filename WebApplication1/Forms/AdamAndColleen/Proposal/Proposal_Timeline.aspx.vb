@@ -21,6 +21,10 @@ Public Class ProposalStory_Timeline
         rptApril.DataSource = dv.ToTable
         rptApril.DataBind()
 
+        dv.RowFilter = "nAccordion = 4"
+        rptMay.DataSource = dv.ToTable
+        rptMay.DataBind()
+
     End Sub
 
 #Region "Functions"
@@ -61,13 +65,15 @@ Public Class ProposalStory_Timeline
         TableBind(e)
     End Sub
 
-
     Private Sub rptMarch_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptMarch.ItemDataBound
         TableBind(e)
     End Sub
 
-
     Private Sub rptApril_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptApril.ItemDataBound
+        TableBind(e)
+    End Sub
+
+    Private Sub rptMay_ItemDataBound(sender As Object, e As System.Web.UI.WebControls.RepeaterItemEventArgs) Handles rptMay.ItemDataBound
         TableBind(e)
     End Sub
 #End Region

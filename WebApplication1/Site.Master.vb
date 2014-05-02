@@ -40,7 +40,7 @@ Public Class Site
     Protected Sub Page_Init(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Init
         'Master Redirect to Login, Must have all login information
         Dim Userpkg As UserPackage = GetUserPackage()
-        If 1 Then
+        If 0 Then
             If Debugger.IsAttached OrElse HttpContext.Current.Session("lHomeRun") = True Then
                 'Continue Redirect to Default Page
             ElseIf String.IsNullOrWhiteSpace(Userpkg.UserInformation.cAuthorization) OrElse _
