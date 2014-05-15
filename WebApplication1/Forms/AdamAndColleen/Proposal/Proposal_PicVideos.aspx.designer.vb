@@ -41,13 +41,31 @@ Partial Public Class Proposal_PicVideos
     Protected WithEvents uctrlPhotoProposal As Global.WebApplication1.ctrl_rptPhoto
 
     '''<summary>
-    '''uctrlPhotoRivieraMaya control.
+    '''uctrlPhotoTulum control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents uctrlPhotoRivieraMaya As Global.WebApplication1.ctrl_rptPhoto
+    Protected WithEvents uctrlPhotoTulum As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoChichenItza control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoChichenItza As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
+    '''uctrlPhotoHardRock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoHardRock As Global.WebApplication1.ctrl_rptPhoto
 
     '''<summary>
     '''uctrlPhotoRandoms control.
