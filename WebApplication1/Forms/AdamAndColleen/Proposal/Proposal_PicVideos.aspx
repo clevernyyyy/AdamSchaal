@@ -59,7 +59,8 @@
                             <div class="tab-content">
                                 <div class="tab-pane" id="dayOne">
                                     <p>
-                                        Pictures from dayOne
+                                        Pictures from our first day in Boston.  We were able to spend time with my sister Lauren and her boyfriend Demetri.  
+                                        We toured the Charles River, we went to Woody's Bar and Grill, and then to Fenway Park.
                                     </p>
                                     <!--  Day One Control  -->
                                     <div>
@@ -68,7 +69,11 @@
                                 </div>
                                 <div class="tab-pane" id="dayTwo">
                                     <p>
-                                        Pictures from dayTwo
+                                        We took a lot of pictures on our second day in Boston.  We spent time with Nicole and her boyfriend John along part of 
+                                        the Freedom Trail.  We went to the Quincy market where we shopped a little, saw the Cheers bar, and watched street performers.
+                                        For lunch we ate at Dick's Last Resort, one of those restaurants where the waiters are rude to you.  After lunch, we went to 
+                                        Boston's Frost bar where everything is made of ice: the walls, the glasses and the decorations.  It was quite cool, literally!  
+                                        Next we took a duck tour of Boston.  (Quack, quack)  What a fun day!
                                     </p>
                                     <!--  Day Two Control  -->
                                     <div>
@@ -77,7 +82,8 @@
                                 </div>
                                 <div class="tab-pane" id="dayThree">
                                     <p>
-                                        Pictures from dayThree
+                                        I was quite sick on day three.  Lauren took Colleen around the Freedom trail, they went to Cantina Italiano, then 
+                                        Mike's Pastry, and finally ended up in the Boston Commons where I met up with them.  This is where I proposed.  (See Proposal and Video tabs)
                                     </p>
                                     <!--  dayThree Control  -->
                                     <div>
@@ -88,7 +94,12 @@
                         </div>
                         <div class="tab-pane" id="proposal">
                             <p>
-                                Would you like to see the proposal take place?
+                                I will never forget my proposal.  I woke Colleen and I up at 5 AM because I was extremely sick from food poisoning.  
+                                "Oh no!" I thought.  This was the day I had planned on proposing in the morning!  Instead, Colleen and Lauren had 
+                                to take off on their own while I recovered in the hotel.  Eventually I met them at the chilly Boston Commons where 
+                                it turned out there was thousands of people on a hunger walk/run for Boston.  Colleen, Lauren and I went over to 
+                                the Boston Public Gardens side to check out the tulips and the man-made gardens.  It was beautiful.  I knew that 
+                                even though nothing seemed to go right, this was still the perfect place and time for me to propose to my life-long love.
                             </p>
                             <!--  Proposal Control  -->
                             <div>
@@ -142,6 +153,14 @@
                                     <!--  Hard Rock Resort Control  -->
                                     <div>
                                         <uctrl:rptPhoto ID="uctrlPhotoHardRock" runat="server" tabPhoto="Hard Rock/" />
+                                    </div>
+                                    <br />
+                                    <p>
+                                        Our resort wasn't only beautiful but also had excellent restaurants that we got to try every night!
+                                    </p>
+                                    <!--  Food Resort Control  -->
+                                    <div>
+                                        <uctrl:rptPhoto ID="uctrlPhotoResortFood" runat="server" tabPhoto="Resort Food/" />
                                     </div>
                                 </div>
                             </div>

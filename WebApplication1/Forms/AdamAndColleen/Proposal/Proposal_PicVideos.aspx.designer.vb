@@ -95,6 +95,15 @@ Partial Public Class Proposal_PicVideos
     Protected WithEvents uctrlPhotoHardRock As Global.WebApplication1.ctrl_rptPhoto
 
     '''<summary>
+    '''uctrlPhotoResortFood control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uctrlPhotoResortFood As Global.WebApplication1.ctrl_rptPhoto
+
+    '''<summary>
     '''uctrlPhotoRandoms control.
     '''</summary>
     '''<remarks>
