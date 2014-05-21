@@ -34,8 +34,6 @@
                         <li><a href="#boston" data-toggle="tab" data-parent="#accordion">Boston</a></li>
                         <li><a href="#proposal" data-toggle="tab" data-parent="#accordion">Proposal</a></li>
                         <li><a href="#rivieraMaya" data-toggle="tab" data-parent="#accordion">Riviera Maya</a></li>
-                        <%--<li><a href="#tulum" data-toggle="tab" data-parent="#accordion">Tulum</a></li>
-                            <li><a href="#chichenItza" data-toggle="tab" data-parent="#accordion">Chichén Itza</a></li>--%>
                         <li><a href="#randoms" data-toggle="tab" data-parent="#accordion">Randoms</a></li>
                         <li><a href="#videos" data-toggle="tab" data-parent="#accordion">Videos</a></li>
                     </ul>
@@ -61,7 +59,7 @@
                         </div>
                         <div class="tab-pane" id="proposal">
                             <p>
-                                Would you like to see the proposal take place?</p>
+                                Here are a few pictures, first of me packing the ring, the ring, and then post-proposal.  If you'd like to see the actual proposal, check out the video section!</p>
                             <!--  Proposal Control  -->
                             <div>
                                 <uctrl:rptPhoto ID="uctrlPhotoProposal" runat="server" tabPhoto="Proposal/" />
@@ -75,36 +73,39 @@
                                 <li><a href="#chichenItza" data-toggle="tab">Chichén Itza</a></li>
                                 <li><a href="#hardRock" data-toggle="tab">Hard Rock Resort</a></li>
                             </ul>
-                            
-                    <div class="tab-content">
-                        <div class="tab-pane" id="tulum">
-                            <p>
-                                Pictures from our time visiting the Mayan ruins of Tulum. We also got to swim in
-                                the Caribbean Sea!</p>
-                            <!--  Tulum Control  -->
-                            <div>
-                                <uctrl:rptPhoto ID="uctrlPhotoTulum" runat="server" tabPhoto="Tulum/" />
+                            <!--  RivieraMaya Control  -->
+                        <%--<div>
+                                <uctrl:rptPhoto ID="uctrlPhotoRivieraMaya" runat="server" tabPhoto="RivieraMaya/" />
+                            </div>--%>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="tulum">
+                                    <p>
+                                        Pictures from our time visiting the Mayan ruins of Tulum. We also got to swim in
+                                        the Caribbean Sea!</p>
+                                    <!--  Tulum Control  -->
+                                    <div>
+                                        <uctrl:rptPhoto ID="uctrlPhotoTulum" runat="server" tabPhoto="Tulum/" />
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="chichenItza">
+                                    <p>
+                                        Pictures from our visit one of the new 7 Wonders of the World, Chichén Itza.</p>
+                                    <!--  Chichén Itza Control  -->
+                                    <div>
+                                        <uctrl:rptPhoto ID="uctrlPhotoChichenItza" runat="server" tabPhoto="Chichén Itza/" />
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="hardRock">
+                                    <p>
+                                        Here are some pictures from our four star resort. I have to say this was an awesome
+                                        place to stay!</p>
+                                    <!--  Hard Rock Resort Control  -->
+                                    <div>
+                                        <uctrl:rptPhoto ID="uctrlPhotoHardRock" runat="server" tabPhoto="Hard Rock/" />
+                                    </div>
+                                </div>
+                                         
                             </div>
-                        </div>
-                        <div class="tab-pane" id="chichenItza">
-                            <p>
-                                Pictures from our visit one of the new 7 Wonders of the World, Chichén Itza.</p>
-                            <!--  Chichén Itza Control  -->
-                            <div>
-                                <uctrl:rptPhoto ID="uctrlPhotoChichenItza" runat="server" tabPhoto="Chichén Itza/" />
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="hardRock">
-                            <p>
-                                Here are some pictures from our four star resort. I have to say this was an awesome
-                                place to stay!</p>
-                            <!--  Hard Rock Resort Control  -->
-                            <div>
-                                <uctrl:rptPhoto ID="uctrlPhotoHardRock" runat="server" tabPhoto="Hard Rock/" />
-                            </div>
-                        </div>
-                        </div>
-
                         </div>
                         <div class="tab-pane" id="randoms">
                             <p>
