@@ -25,7 +25,8 @@
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-9">
                 <div class="slideUp propContent" style="min-height: 900px">
-                    <h1 class="centered">Pictures and Videos</h1>
+                    <h1 class="centered">
+                        Pictures and Videos</h1>
                     <hr />
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs">
@@ -55,12 +56,12 @@
                                 <li><a href="#dayTwo" data-toggle="tab">Day Two</a></li>
                                 <li><a href="#dayThree" data-toggle="tab">Day Three</a></li>
                             </ul>
-
                             <div class="tab-content">
                                 <div class="tab-pane" id="dayOne">
                                     <p>
-                                        Pictures from our first day in Boston.  We were able to spend time with my sister Lauren and her boyfriend Demetri.  
-                                        We toured the Charles River, we went to Woody's Bar and Grill, and then to Fenway Park.
+                                        Pictures from our first day in Boston. We were able to spend time with my sister
+                                        Lauren and her boyfriend Demetri. We toured the Charles River, we went to Woody's
+                                        Bar and Grill, and then to Fenway Park.
                                     </p>
                                     <!--  Day One Control  -->
                                     <div>
@@ -69,11 +70,13 @@
                                 </div>
                                 <div class="tab-pane" id="dayTwo">
                                     <p>
-                                        We took a lot of pictures on our second day in Boston.  We spent time with Nicole and her boyfriend John along part of 
-                                        the Freedom Trail.  We went to the Quincy market where we shopped a little, saw the Cheers bar, and watched street performers.
-                                        For lunch we ate at Dick's Last Resort, one of those restaurants where the waiters are rude to you.  After lunch, we went to 
-                                        Boston's Frost bar where everything is made of ice: the walls, the glasses and the decorations.  It was quite cool, literally!  
-                                        Next we took a duck tour of Boston.  (Quack, quack)  What a fun day!
+                                        We took a lot of pictures on our second day in Boston. We spent time with Nicole
+                                        and her boyfriend John along part of the Freedom Trail. We went to the Quincy market
+                                        where we shopped a little, saw the Cheers bar, and watched street performers. For
+                                        lunch we ate at Dick's Last Resort, one of those restaurants where the waiters are
+                                        rude to you. After lunch, we went to Boston's Frost bar where everything is made
+                                        of ice: the walls, the glasses and the decorations. It was quite cool, literally!
+                                        Next we took a duck tour of Boston. (Quack, quack) What a fun day!
                                     </p>
                                     <!--  Day Two Control  -->
                                     <div>
@@ -82,8 +85,10 @@
                                 </div>
                                 <div class="tab-pane" id="dayThree">
                                     <p>
-                                        I was quite sick on day three.  Lauren took Colleen around the Freedom trail, they went to Cantina Italiano, then 
-                                        Mike's Pastry, and finally ended up in the Boston Commons where I met up with them.  This is where I proposed.  (See Proposal and Video tabs)
+                                        I was quite sick on day three. Lauren took Colleen around the Freedom trail, they
+                                        went to Cantina Italiano, then Mike's Pastry, and finally ended up in the Boston
+                                        Commons where I met up with them. This is where I proposed. (See Proposal and Video
+                                        tabs)
                                     </p>
                                     <!--  dayThree Control  -->
                                     <div>
@@ -94,12 +99,15 @@
                         </div>
                         <div class="tab-pane" id="proposal">
                             <p>
-                                I will never forget my proposal.  I woke Colleen and I up at 5 AM because I was extremely sick from food poisoning.  
-                                "Oh no!" I thought.  This was the day I had planned on proposing in the morning!  Instead, Colleen and Lauren had 
-                                to take off on their own while I recovered in the hotel.  Eventually I met them at the chilly Boston Commons where 
-                                it turned out there was thousands of people on a hunger walk/run for Boston.  Colleen, Lauren and I went over to 
-                                the Boston Public Gardens side to check out the tulips and the man-made gardens.  It was beautiful.  I knew that 
-                                even though nothing seemed to go right, this was still the perfect place and time for me to propose to my life-long love.
+                                I will never forget my proposal. I woke Colleen and I up at 5 AM because I was extremely
+                                sick from food poisoning. "Oh no!" I thought. This was the day I had planned on
+                                proposing in the morning! Instead, Colleen and Lauren had to take off on their own
+                                while I recovered in the hotel. Eventually I met them at the chilly Boston Commons
+                                where it turned out there was thousands of people on a hunger walk/run for Boston.
+                                Colleen, Lauren and I went over to the Boston Public Gardens side to check out the
+                                tulips and the man-made gardens. It was beautiful. I knew that even though nothing
+                                seemed to go right, this was still the perfect place and time for me to propose
+                                to my life-long love.
                             </p>
                             <!--  Proposal Control  -->
                             <div>
@@ -116,13 +124,6 @@
                                 <li><a href="#hardRock" data-toggle="tab">Hard Rock Resort</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane" id="tulum">
-                                    <p>
-                                        Pictures from our time visiting the Mayan ruins of Tulum. We also got to swim in
-                                        the Caribbean Sea!</p>
-
-
-                            <div class="tab-content">
                                 <div class="tab-pane" id="rivieraMaya">
                                     <p>
                                         Pictures from our arrival and time in Riviera Maya
@@ -135,9 +136,8 @@
                                 <div class="tab-pane" id="tulum">
                                     <p>
                                         Pictures from our time visiting the Mayan ruins of Tulum. We also got to swim in
-                                the Caribbean Sea!
+                                        the Caribbean Sea!
                                     </p>
-
                                     <!--  Tulum Control  -->
                                     <div>
                                         <uctrl:rptPhoto ID="uctrlPhotoTulum" runat="server" tabPhoto="Tulum/" />
@@ -145,10 +145,8 @@
                                 </div>
                                 <div class="tab-pane" id="chichenItza">
                                     <p>
-
                                         Pictures from our visit one of the new 7 Wonders of the World, Chichén Itza.</p>
                                     </p>
-
                                     <!--  Chichén Itza Control  -->
                                     <div>
                                         <uctrl:rptPhoto ID="uctrlPhotoChichenItza" runat="server" tabPhoto="Chichén Itza/" />
@@ -163,13 +161,10 @@
                                     <div>
                                         <uctrl:rptPhoto ID="uctrlPhotoHardRock" runat="server" tabPhoto="Hard Rock/" />
                                     </div>
-
-                                </div>
-                                         
-
                                     <br />
                                     <p>
-                                        Our resort wasn't only beautiful but also had excellent restaurants that we got to try every night!
+                                        Our resort wasn't only beautiful but also had excellent restaurants that we got
+                                        to try every night!
                                     </p>
                                     <!--  Food Resort Control  -->
                                     <div>
@@ -199,19 +194,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
-                <div class="list-group">
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx" type="radio" class="list-group-item">Proposal</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio"
+        </div>
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="Div1" role="navigation">
+            <div class="list-group">
+                <a href="/Forms/AdamAndColleen/Proposal/Proposal.aspx" type="radio" class="list-group-item">
+                    Proposal</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_Story.aspx" type="radio"
                         class="list-group-item">Our Story</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_How.aspx"
                             type="radio" class="list-group-item">How did I think of it?</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_Where.aspx"
                                 type="radio" class="list-group-item">Where did it happen?</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_WhereNow.aspx"
                                     type="radio" class="list-group-item">Where are we now?</a> <a href="/Forms/AdamAndColleen/Proposal/Proposal_PicVideos.aspx"
                                         type="radio" class="list-group-item active">Pictures and Video</a>
-                    <a href="/Forms/AdamAndColleen/Proposal/Proposal_Timeline.aspx" type="radio" class="list-group-item">Planning Timeline</a>
-                </div>
+                <a href="/Forms/AdamAndColleen/Proposal/Proposal_Timeline.aspx" type="radio" class="list-group-item">
+                    Planning Timeline</a>
             </div>
         </div>
-        <!--/row-->
+    </div>
+    <!--/row-->
     </div>
     <!--/.container-->
 </asp:Content>
