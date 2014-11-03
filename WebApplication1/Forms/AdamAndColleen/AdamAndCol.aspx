@@ -45,9 +45,9 @@
                 <div class="col-lg-4 callout">
                     <span class="icon icon-people"></span>
                     <h2>
-                        <a style="color: Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">Wedding</a></h2>
+                        <a style="color: Gray" href="http://wedding.adamschaal.com">Wedding</a></h2>
                     <p>
-                        Click <a style="color: Gray" href="/Forms/AdamAndColleen/Wedding/Wedding.aspx">here</a>
+                        Click <a style="color: Gray" href="http://wedding.adamschaal.com">here</a>
                         to learn more about our wedding.
                     </p>
                 </div>
