@@ -113,6 +113,7 @@
     <Content Include="Forms\AdamAndColleen\Wedding\Wedding.aspx" />
     <Content Include="img\arrow_left.png" />
     <Content Include="img\arrow_right.png" />
+    <Content Include="img\HDpix\italy.jpg" />
     <Content Include="Photos\Col_Adam\10-03-09.JPG" />
     <Content Include="Photos\Col_Adam\10-2-2010.JPG" />
     <Content Include="Photos\Col_Adam\11-08-07 7.JPG" />

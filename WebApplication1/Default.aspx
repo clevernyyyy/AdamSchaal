@@ -89,9 +89,8 @@
 			<div class="col-lg-5">
 				<h4 class="centered">Personal Information</h4>
 				<hr />
-				Hi.  My name is Adam T Schaal.  I am a 28 year old living in Omaha, NE.  I currently work as a Software 
-				Developer II with a Berkshire Hathaway insurance company.  I have worked as a Structural Engineer, as a 
-				Construction Superintendent, and now a Developer.  I think that development is where I needed to end up.  
+				Hi.  My name is Adam T Schaal.  I am a 29 year old living in Omaha, NE.  I currently work for Gallup in Omaha, Nebraska.  
+                Switching my career to work in development was one of the most rewarding things I've ever done.
 				<br />
 				<br />
 				I enjoy computers, working with them, building them, and hacking them.  I'm currently a part-time graduate 
@@ -188,9 +187,7 @@
 					Newsletter</h3>
 				<p>
 					Register to my newsletter and be updated with the latests information regarding
-					my services, offers and much more. AKA I'll send pure spam to you.  My updates can include, 
-					but aren't limited to updates on my coolness factor, what I'm doing at this exact instant, 
-					what kind of bathroom floors I see, etc.</p>
+					my services, offers and much more. AKA I'll send pure spam to you.</p>
 				<p>
 					<form class="form-horizontal" role="form">
 					<div class="form-group">

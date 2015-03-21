@@ -25,13 +25,14 @@
 	<script type="text/javascript" src="/Scripts/modernizr.custom.js"></script>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-	<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+	<body data-spy="scroll" data-offset="0" data-target="#navbar-main" style="background-color:#2c2c2c;">
 		<!-- ==== HEADERWRAP ==== -->
-		<div id="subwrap" id="honeymoon" name="honeymoon">
+		<div id="italywrap" id="honeymoon" name="honeymoon">
 			<header class="clearfix">
-					<h1><span class="/Styles/icon icon-pyramid"></span></h1>
+					<%--<h1><span class="/Styles/icon icon-pyramid"></span></h1>--%>
 					<p>Honeymoon</p>
-					<h2 style="color:White">This will be updated soon - I have to get married first!</h2>
+					<h2 style="color:White; text-shadow: 5px 1px 5px #000;">This will be updated soon - I have to get married first!</h2>
+					<h2 style="color:White; text-shadow: 5px 1px 5px #000;">(It involves Italy)</h2>
 			</header>
 		</div>
 	</body>
