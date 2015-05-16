@@ -4,6 +4,11 @@
  *
  */
 
+
+.iconText {
+    margin-left: 10px;
+}
+
 /*Pop-over Special Class*/
 .popover.popover-medium
 {
@@ -490,7 +495,7 @@ a:after {
 
 #italywrap {
 	background: url(../img/HDpix/italy.jpg) no-repeat center top;
-	margin-top: 120px;
+	margin-top: 60px;
 	padding-top:30px;
 	text-align:center;
 	background-attachment: relative;

@@ -104,6 +104,7 @@
     <Content Include="Controls\ctrl_rptPhoto.ascx" />
     <Content Include="Controls\ctrl_tblCheatCode.ascx" />
     <Content Include="favicon %282%29.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Forms\AdamAndColleen\AdamAndCol.aspx" />
     <Content Include="Forms\Standard\UnderConstruction.aspx" />
     <Content Include="Forms\AdamAndColleen\Honeymoon\Honeymoon.aspx" />
@@ -114,18 +115,6 @@
     <Content Include="img\arrow_left.png" />
     <Content Include="img\arrow_right.png" />
     <Content Include="img\HDpix\italy.jpg" />
-    <Content Include="Photos\Col_Adam\10-03-09.JPG" />
-    <Content Include="Photos\Col_Adam\10-2-2010.JPG" />
-    <Content Include="Photos\Col_Adam\11-08-07 7.JPG" />
-    <Content Include="Photos\Col_Adam\12-27-05.jpg" />
-    <Content Include="Photos\Col_Adam\3-04-06 2.jpg" />
-    <Content Include="Photos\Col_Adam\5-24-08.jpg" />
-    <Content Include="Photos\Col_Adam\CollFace.png" />
-    <Content Include="Photos\Col_Adam\CollFace2.jpg" />
-    <Content Include="Photos\Col_Adam\Face.jpg" />
-    <Content Include="Photos\Col_Adam\IMG_0520.JPG" />
-    <Content Include="Photos\Col_Adam\IMG_8804.JPG" />
-    <Content Include="Photos\Col_Adam\scan0001.jpg" />
     <Content Include="img\fancyBox\blank.gif" />
     <Content Include="img\fancyBox\fancybox_buttons.png" />
     <Content Include="img\fancyBox\fancybox_loading%402x.gif" />
@@ -150,7 +139,6 @@
     <Content Include="img\HDpix\Sunset Reflection.jpg" />
     <Content Include="img\HDpix\Wave Splash.jpg" />
     <Content Include="img\header_bg.jpg" />
-    <Content Include="Photos\Col_Adam\Col_Adam.JPG" />
     <Content Include="img\map\Map.png" />
     <Content Include="img\Menu\Honeymoon-alpha.png" />
     <Content Include="img\Menu\Honeymoon.gif" />
@@ -169,26 +157,6 @@
     <Content Include="img\HDpix\Winter.jpg" />
     <Content Include="img\Videos\IMG_2500.MOV" />
     <Content Include="img\Videos\IMG_2501.MOV" />
-    <Content Include="Photos\Randoms\10-03-09.JPG" />
-    <Content Include="Photos\Randoms\10-2-2010.JPG" />
-    <Content Include="Photos\Randoms\11-08-07 7.JPG" />
-    <Content Include="Photos\Boston\Boston.jpg" />
-    <Content Include="Photos\Omaha\Omaha.jpg" />
-    <Content Include="Photos\Randoms\12-27-05.jpg" />
-    <Content Include="Photos\Randoms\3-04-06 2.jpg" />
-    <Content Include="Photos\Randoms\5-24-08.jpg" />
-    <Content Include="Photos\Randoms\CollFace.png" />
-    <Content Include="Photos\Randoms\CollFace2.jpg" />
-    <Content Include="Photos\Randoms\Col_Adam.JPG" />
-    <Content Include="Photos\Randoms\Face.jpg" />
-    <Content Include="Photos\Randoms\thumb\CollFace.png" />
-    <Content Include="Photos\Randoms\thumb\CollFace2.jpg" />
-    <Content Include="Photos\Randoms\thumb\Col_Adam.JPG" />
-    <Content Include="Photos\Randoms\thumb\Face.jpg" />
-    <Content Include="Photos\Randoms\IMG_0520.JPG" />
-    <Content Include="Photos\Randoms\IMG_8804.JPG" />
-    <Content Include="Photos\RivieraMaya\RivieraMaya.jpeg" />
-    <Content Include="Photos\Randoms\scan0001.jpg" />
     <Content Include="Scripts\jquery-1.10.1.min.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\jquery.fancybox-buttons.js" />
@@ -200,13 +168,13 @@
     <Content Include="Scripts\Photos.js" />
     <Content Include="Scripts\PopOver.js" />
     <Content Include="Scripts\Proposal.js" />
+    <Content Include="Scripts\scroll.js" />
     <Content Include="Scripts\WhereNow.js" />
     <Content Include="Styles\animations.css" />
     <Content Include="Styles\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Forms\Standard\About.aspx" />
@@ -448,6 +416,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
+    <Content Include="docs\ATS_Resume.pdf" />
     <None Include="img\.DS_Store" />
     <None Include="img\portfolio\.DS_Store" />
     <None Include="img\team\.DS_Store" />
@@ -475,11 +444,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Photos\Boston\thumb\" />
-    <Folder Include="Photos\Omaha\thumb\" />
-    <Folder Include="Photos\Proposal\thumb\" />
-    <Folder Include="Photos\Ring\" />
-    <Folder Include="Photos\RivieraMaya\thumb\" />
+    <Folder Include="Photos\NewFolder1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

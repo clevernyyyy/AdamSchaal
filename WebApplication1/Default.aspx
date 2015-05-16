@@ -106,7 +106,7 @@
 				<%--<br />--%>
 				<h4>
 					<b>Me</b></h4>
-                <a style="font-size:1.2em" href="#">Resumé</a>
+                <a target="_newtab" style="font-size:1.2em" href="/docs/ATS_Resume.pdf">Resumé</a>
 				<br />
 				<a href="https://twitter.com/adamschaal" class="icon icon-twitter"></a>
 				<a href="https://www.facebook.com/adam.schaal" class="icon icon-facebook"></a>
@@ -167,17 +167,20 @@
 				<h3>
 					Contact Information</h3>
 				<p>
-					<span class="icon icon-home"></span>   Omaha, NE
+					<span class="icon icon-home"></span>
+                    <span class="iconText">Omaha, NE</span>
 					<br />
-					<%--                    <span class="icon icon-phone"></span>
-					<br />--%>
-					<span class="icon icon-phone"></span>   402.630.4979
+					<span class="icon icon-phone"></span>
+                    <span class="iconText">402.630.4979</span>
 					<br />
-					<span class="icon icon-envelop"></span><a href="mailto:aschaal1263@gmail.com?subject=FromAdamSchaal.com&body=Adam%20you're%20the%20best!">   adamschaal1263@gmail.com</a>
+					<span class="icon icon-envelop"></span>
+                    <a href="mailto:aschaal1263@gmail.com?subject=FromAdamSchaal.com&body=Adam%20you're%20the%20best!" class="iconText">adamschaal1263@gmail.com</a>
 					<br />
-					<span class="icon icon-twitter"></span><a href="https://twitter.com/adamschaal">   @adamschaal </a>
+					<span class="icon icon-twitter"></span>
+                    <a href="https://twitter.com/adamschaal" class="iconText">@adamschaal </a>
 					<br />
-					<span class="icon icon-facebook"></span><a href="https://www.facebook.com/adam.schaal">   Adam Schaal</a>
+					<span class="icon icon-facebook"></span>
+                    <a href="https://www.facebook.com/adam.schaal" class="iconText">Adam Schaal</a>
 					<br />
 				</p>
 			</div>
